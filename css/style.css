@@ -1,10 +1,12 @@
 html {
-   font-family: 'Kohinoor' 'Bangla';
+   font-family: 'Kohinoor Bangla';
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-   
+   header button {
+      font-size: 16px;
+   }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -35,11 +37,29 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1em 2em;
+   padding: 0em 1em;
    background: #fff;
    z-index: 9001;
+   border-bottom: solid #22567b;
 }
 
 .three-btn-header {
-   gap: 10px;
+   gap: 2em;
+   margin-right: 2%;
+}
+
+.three-btn-header a {
+   padding: 1.6rem 1.8rem;
+   font-size: 1.5em;
+   border-radius: 0.5rem;
+   border: 1px solid;
+   background-color: #22567b;
+   color: #ffffff;
+   transition: background-color 0.2s ease-in;
+   text-decoration: none;
+}
+
+.three-btn-header a:hover {
+   background-color: #1db9de;
+   cursor: pointer;
 }
