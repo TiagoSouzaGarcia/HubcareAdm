@@ -57,12 +57,12 @@ header {
 .three-btn-header {
   display: flex;
   justify-content: space-between;
-  gap: 0.4em;
+  gap: 0.6em;
   margin-right: 2%;
 }
 
 .three-btn-header a {
-  padding: 1.6rem 1.8rem;
+  padding: 1.2rem 1.6rem;
   font-size: 1.5em;
   border-radius: 0.5rem;
   border: 1px solid;
