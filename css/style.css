@@ -80,8 +80,8 @@ header {
 }
 
 .subheader {
-  position: fixed;
-  top: 120px;
+  position: relative;
+  top: 110px;
   left: 0;
   right: 0;
   z-index: 9000;
@@ -120,4 +120,58 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+}
+
+nav {
+  background-color: #22567b;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.drop-btn {
+  color: white;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  position: relative; /* Relative to its position for absolute dropdown */
+  transition: color 0.2s ease-in;
+}
+
+.drop-btn:hover {
+  color: #1db9de;
+  cursor: pointer;
+}
+
+/* Dropdown content, initially hidden */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  top: 100%; /* Position below the button */
+  left: 0; /* Align with the left side of the button */
+  width: 150px;
+}
+
+/* Items within the dropdown */
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
 }
