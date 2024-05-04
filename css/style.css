@@ -53,7 +53,6 @@ header {
 
 .dropdown {
   float: left;
-  overflow: scroll;
   z-index: 10;
 }
 
@@ -66,7 +65,7 @@ header {
 }
 
 .three-btn-header a {
-  padding: 1.2rem;
+  padding: 1.2rem;  
   font-size: 1.5em;
   border-radius: 0.5rem;
   background-color: var(--azul-escuro);
