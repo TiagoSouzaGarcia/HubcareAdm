@@ -4,6 +4,8 @@
   --azul-escuro: #22567b;
   --azul-claro: #1db9de;
   --branco: #ffffff;
+  --cinza-claro: #f4f2f1;
+  --preto: #000111;
 }
 
 @font-face {
@@ -49,6 +51,12 @@ header {
   margin-top: 1%;
 }
 
+.dropdown {
+  float: left;
+  overflow: scroll;
+  z-index: 10;
+}
+
 .three-btn-header {
   display: flex;
   justify-content: space-between;
@@ -72,6 +80,22 @@ header {
   background-color: var(--azul-claro);
   cursor: pointer;
   box-shadow: 0px 6px 12px #000000a0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.hero {
+  background-image: url("/assets/banners/banner-home-07-1000x500.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  font-size: 4rem;
 }
 
 .footer {
@@ -132,7 +156,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: var(--branco);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
   padding: 10px;
@@ -158,4 +182,49 @@ header {
 
 .show {
   display: block;
+}
+
+.w-btn {
+  position: fixed;
+  border: 4px solid var(--branco);
+  gap: 8px;
+  bottom: 20px;
+  height: 88px;
+  right: 60px;
+  width: 248px;
+  padding: 20px 32px;
+  border-radius: 88px;
+  background: var(--cinza-claro);
+  box-sizing: border-box;
+  box-shadow: 8px 8px #0003;
+  min-width: 64px;
+  size: 0.875rem;
+  overflow: visible;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--preto);
+}
+
+.w-btn span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 40px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.w-btn img {
+  width: 50px;
+  padding: 2px;
+  margin-right: 2px;
+}
+
+.w-btn p {
+  font-weight: 700;
 }
