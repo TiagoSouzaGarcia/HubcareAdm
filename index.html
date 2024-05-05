@@ -33,61 +33,102 @@
       </div>
       <div class="subheader">
         <div class="dropdown">
-        <button onclick="toggleDropdown('dropMenu1')" class="drop-btn">
-          A HUBCARE
-        </button>
-        <div class="dropdown-content" id="dropMenu1">
-          <a href="#">Option 1</a>
-          <a href="#">Option 2</a>
-          <a href="#">Option 3</a>
-          <a href="#">Option 4</a>
-        </div>
-      </div>
-
-        <div class="dropdown">
-        <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
-          PLANOS DE SAÚDE E BENEFÍCIOS
-        </button>
-        <div class="dropdown-content" id="dropMenu2">
-          <a href="#">Option 5</a>
-          <a href="#">Option 6</a>
-          <a href="#">Option 7</a>
-        </div>
+          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn">
+            A HUBCARE
+          </button>
+          <div class="dropdown-content" id="dropMenu1">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+          </div>
         </div>
 
         <div class="dropdown">
-        <button onclick="toggleDropdown('dropMenu3')" class="drop-btn">
-          TELEMEDICINA
-        </button>
-        <div class="dropdown-content" id="dropMenu3">
-          <a href="#">Option 8</a>
-          <a href="#">Option 9</a>
-          <a href="#">Option 10</a>
-          <a href="#">Option 11</a>
-        </div>
+          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
+            PLANOS DE SAÚDE E BENEFÍCIOS
+          </button>
+          <div class="dropdown-content" id="dropMenu2">
+            <a href="#">Option 5</a>
+            <a href="#">Option 6</a>
+            <a href="#">Option 7</a>
+          </div>
         </div>
 
         <div class="dropdown">
-        <button onclick="toggleDropdown('dropMenu4')" class="drop-btn">
-          FALE CONOSCO
-        </button>
-        <div class="dropdown-content" id="dropMenu4">
-          <a href="#">Option 12</a>
-          <a href="#">Option 13</a>
+          <button onclick="toggleDropdown('dropMenu3')" class="drop-btn">
+            TELEMEDICINA
+          </button>
+          <div class="dropdown-content" id="dropMenu3">
+            <a href="#">Option 8</a>
+            <a href="#">Option 9</a>
+            <a href="#">Option 10</a>
+            <a href="#">Option 11</a>
+          </div>
         </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown('dropMenu4')" class="drop-btn">
+            FALE CONOSCO
+          </button>
+          <div class="dropdown-content" id="dropMenu4">
+            <a href="#">Option 12</a>
+            <a href="#">Option 13</a>
+          </div>
         </div>
       </div>
     </header>
     <!-- As tags abaixo são placeholders que servirão para esqueleto do projeto -->
-    <section class="container hero">
-      Espaço para divulgações e comunicados
+    <section class="hero">
+      <h2>
+        Planos de saúde para você e sua família, sua empresa e seus funcionários
+      </h2>
+      <p>Telefone: (48) 3028-4360</p>
+      <p>whatsapp: (48) 99974-0146</p>
     </section>
-    <section class="container">
-      Empresas Hubcare
-      <div>Logo ADM</div>
-      <div>Logo Corretora</div>
-      <div>Logo Digital</div>
-      <div>Operadoras de Planos de Saúde Parceiras - LOGOS das PARCEIRAS</div>
+    <section class="empresas__container">
+      <h2 class="empresas__titulo">Empresas Hubcare</h2>
+      <ul class="empresas__lista">
+        <li class="empresas__card">
+          <a href="https://www.hubcare.adm.br">
+            <img
+              src="/assets/logos/logo_hub_administradora.jpg"
+              alt="Logo hubcare administradora de beneficios"
+            />
+            <h3 class="empresas__item">Hubcare Administradora de Benefícios</h3>
+            <p>Sobre Administradora de benefícios</p>
+          </a>
+        </li>
+        <li class="empresas__card">
+          <a href="https://www.hubcaresaude.com.br">
+            <img
+              src="/assets/logos/logo_hub_gestao_saude.jpg"
+              alt="Logo da hubcare gestão em saúde"
+            />
+            <h3 class="empresas__item">Hubcare Corretora</h3>
+            <p>Sobre a Corretora</p>
+          </a>
+        </li>
+        <li class="empresas__card">
+          <a href="https://hubcaredigital.com.br">
+            <img
+              src="/assets/img/hubcare logo5.jpeg"
+              alt="Logo da Hubcare digital"
+            />
+            <h3 class="empresas__item">Hubcare Digital</h3>
+            <p>Sobre a Digital ? Telemedicina</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="operadoras__parceiras">
+      Operadoras de Planos de Saúde Parceiras - LOGOS das PARCEIRAS
+      <h2>
+        A Hubcare trabalha com suas renomadas parceiras operadoras de saúde no
+        Brasil
+      </h2>
+      <p>Proteja sua saíde com o melhor da medicina brasileira</p>
+      <img src="/assets/logos/parceiras/yousaude.png" alt="" />
     </section>
     <section class="container">
       Atendimento para clientes

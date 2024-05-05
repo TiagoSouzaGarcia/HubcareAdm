@@ -4,7 +4,10 @@
   --azul-escuro: #22567b;
   --azul-claro: #1db9de;
   --branco: #ffffff;
-  --cinza-claro: #f4f2f1;
+  --cinza-fundo: #f4f2f1;
+  --cinza-escuro: #bcbdbf;
+  --cinza-claro: #dedede;
+  --cinza-branco: #e6e6e6;
   --preto: #000111;
 }
 
@@ -65,7 +68,7 @@ header {
 }
 
 .three-btn-header a {
-  padding: 1.2rem;  
+  padding: 1.2rem;
   font-size: 1.5em;
   border-radius: 0.5rem;
   background-color: var(--azul-escuro);
@@ -84,17 +87,18 @@ header {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .hero {
-  background-image: url("/assets/banners/banner-home-07-1000x500.jpg");
+  background-image: url("/assets/banners/banner-home-07.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
   justify-content: center;
   color: var(--branco);
   font-size: 4rem;
+  height: 100vh;
+  display: flex;
 }
 
 .footer {
@@ -193,7 +197,7 @@ header {
   width: 248px;
   padding: 20px 32px;
   border-radius: 88px;
-  background: var(--cinza-claro);
+  background: var(--cinza-fundo);
   box-sizing: border-box;
   box-shadow: 8px 8px #0003;
   min-width: 64px;
@@ -228,4 +232,44 @@ header {
 
 .whatsapp__number {
   font-weight: bold;
+}
+
+.empresas__container {
+  text-align: center;
+}
+
+.empresas__container img {
+  width: 50%;
+}
+
+.empresas__titulo {
+  font-size: 46px;
+  color: var(--azul-escuro);
+}
+
+.empresas__lista {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5rem 0;
+}
+
+.empresas__item {
+  font-size: 32px;
+  color: var(--azul-claro);
+}
+
+.empresas__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 32px;
+  gap: 0.5rem;
+  background-color: var(--cinza-fundo);
+}
+
+.empresas__card a {
+  text-decoration: none;
+  gap: 0.5rem;
+  padding: 1rem;
 }
