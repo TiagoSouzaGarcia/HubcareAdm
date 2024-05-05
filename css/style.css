@@ -220,10 +220,12 @@ header {
 
 .w-btn img {
   width: 50px;
-  padding: 2px;
-  margin-right: 2px;
 }
 
-.w-btn p {
-  font-weight: 700;
+.whatsapp__message {
+  font-size: 0.8rem;
+}
+
+.whatsapp__number {
+  font-weight: bold;
 }
