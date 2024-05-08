@@ -24,6 +24,12 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  * {
+    display: block;
+  }
+
+
+  
   header button {
     font-size: 16px;
   }
@@ -159,7 +165,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--branco);
+  background-color: var(--cinza-claro);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
   padding: 10px;
@@ -171,7 +177,7 @@ header {
 /* Items within the dropdown */
 .dropdown-content a {
   display: block;
-  color: black;
+  color: var(--preto);
   padding: 10px 12px;
   text-decoration: none;
   display: block;
