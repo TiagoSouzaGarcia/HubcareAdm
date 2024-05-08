@@ -215,6 +215,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--preto);
+  transition: opacity 0.15s ease-in-out;
 }
 
 .w-btn span {
