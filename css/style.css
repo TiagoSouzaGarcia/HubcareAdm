@@ -28,8 +28,6 @@
     display: block;
   }
 
-
-  
   header button {
     font-size: 16px;
   }
@@ -48,7 +46,8 @@ header {
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
+  margin: 2% 2% 0%;
+  padding: 10px;
 }
 
 .subheader {
@@ -74,6 +73,9 @@ header {
 }
 
 .three-btn-header a {
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 1.2rem;
   font-size: 1.5em;
   border-radius: 0.5rem;
@@ -98,13 +100,31 @@ header {
 .hero {
   background-image: url("/assets/banners/banner-home-07.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  align-items: center;
-  justify-content: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 60% 40%;
   color: var(--branco);
   font-size: 4rem;
   height: 100vh;
+}
+
+.hero__anuncios {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+}
+
+.hero__anuncios h2 {
+  font-size: 2.75rem;
+}
+
+.hero__anuncios h3 {
+  font-size: 2rem;
+}
+
+.hero__anuncios p {
+  font-size: 1.5rem;
 }
 
 .footer {
@@ -241,29 +261,23 @@ header {
   font-weight: bold;
 }
 
-.empresas__container {
-  text-align: center;
-}
-
-.empresas__container img {
-  width: 50%;
-}
-
-.empresas__titulo {
-  font-size: 46px;
-  color: var(--azul-escuro);
-}
-
 .empresas__lista {
   display: flex;
   justify-content: center;
+  width: 100%;
+  gap: 20%;
   list-style-type: none;
   margin: 5rem 0;
 }
 
-.empresas__item {
-  font-size: 32px;
-  color: var(--azul-claro);
+.empresas__container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.empresas__container img {
+  width: 50%;
 }
 
 .empresas__card {
@@ -273,6 +287,22 @@ header {
   border-radius: 32px;
   gap: 0.5rem;
   background-color: var(--cinza-fundo);
+  padding: 10%;
+}
+
+.empresas__card img {
+  min-width: 248px;
+  min-height: 132px;
+}
+
+.empresas__titulo {
+  font-size: 46px;
+  color: var(--azul-escuro);
+}
+
+.empresas__item {
+  font-size: 32px;
+  color: var(--azul-claro);
 }
 
 .empresas__card a {
