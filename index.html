@@ -7,11 +7,6 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://fonts.adobe.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
     <script src="js/dropdown.js"></script>
     <script src="js/observer.js"></script>
   </head>
@@ -59,23 +54,20 @@
         </div>
       </div>
     </header>
-    <!-- As tags abaixo são placeholders que servirão para esqueleto do projeto -->
     <section class="hero">
-      <div class="hero__anuncios">
-        <h3>Hubcare</h3>
-        <h2>
-          Planos de saúde para você e sua família, sua empresa e seus
-          funcionários
-        </h2>
+      <h3>Hubcare</h3>
+      <h2 class="hero__titulo">
+        Cuidando da <strong>saúde</strong> da sua família
+      </h2>
+      <div class="hero__contatos">
         <p>Telefone: (48) 3028-4360</p>
-
         <p>Whatsapp: (48) 99974-0146</p>
       </div>
     </section>
     <section class="empresas__container">
       <h2 class="empresas__titulo">Empresas Hubcare</h2>
-      <ul class="empresas__lista">
-        <li class="empresas__card">
+      <div class="empresas__lista">
+        <div class="empresas__card">
           <a href="https://www.hubcare.adm.br">
             <img
               src="/assets/logos/logo_hub_administradora.jpg"
@@ -84,8 +76,8 @@
             <h3 class="empresas__item">Hubcare Administradora de Benefícios</h3>
             <p>Sobre Administradora de benefícios</p>
           </a>
-        </li>
-        <li class="empresas__card">
+        </div>
+        <div class="empresas__card">
           <a href="https://www.hubcaresaude.com.br">
             <img
               src="/assets/logos/logo_hub_gestao_saude.jpg"
@@ -94,8 +86,8 @@
             <h3 class="empresas__item">Hubcare Corretora</h3>
             <p>Sobre a Corretora</p>
           </a>
-        </li>
-        <li class="empresas__card">
+        </div>
+        <div class="empresas__card">
           <a href="https://hubcaredigital.com.br">
             <img
               src="/assets/img/hubcare logo5.jpeg"
@@ -104,18 +96,21 @@
             <h3 class="empresas__item">Hubcare Digital</h3>
             <p>Sobre a Digital ? Telemedicina</p>
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
-    <section class="operadoras__parceiras">
-      Operadoras de Planos de Saúde Parceiras - LOGOS das PARCEIRAS
-      <h2>
-        A Hubcare trabalha com suas renomadas parceiras operadoras de saúde no
-        Brasil
+    <section class="operadoras-parceiras">
+      <h2 class="operadoras-parceiras__titulo">
+        A Hubcare trabalha com suas parceiras operadoras de saúde
       </h2>
-      <p>Proteja sua saíde com o melhor da medicina brasileira</p>
-      <div class="operadoras__parceiras--lista">
-        <img src="/assets/logos/parceiras/yousaude.png" alt="" />
+      <p class="operadoras-parceiras__subtitulo">
+        Proteja sua saúde com o melhor da medicina brasileira
+      </p>
+      <div class="operadoras-parceiras__lista">
+        <a href="">
+          <img src="/assets/logos/parceiras/yousaude.png" alt="" />
+          YouSaude
+        </a>
         <img src="/assets/logos/parceiras/logo-leve-saude.jpg" alt="" />
         <img src="/assets/logos/parceiras/logo-saude-sao-jose.jpg" alt="" />
         <img src="/assets/logos/parceiras/logo_levmed.jpg" alt="" />
@@ -127,19 +122,29 @@
         <img src="/assets/logos/parceiras/uniodonto-paulista.png" alt="" />
       </div>
     </section>
-    <section class="container__atendimento" id="atendimento_cliente_1">
-      <h3>Atendimento para clientes</h3>
-      <div class="card__atendimento__cliente">
-        <h4>Sou cliente / Meu Plano</h4>
-      </div>
-      <div class="card__atendimento__cliente">
-        <h4>WhatsApp</h4>
-      </div>
-      <div class="card__atendimento__cliente">
-        <h4>Telefone e Emails / Matrize demais Regiões / Nordeste</h4>
-      </div>
-      <div class="card__atendimento__cliente">
-        <h4>Ouvidoria / Email: xxx@xxx</h4>
+    <section class="atendimento__cliente">
+      <h3>Atendimento aos clientes</h3>
+      <div class="container__atendimento">
+        <div class="container__atendimento__card">
+          <h4>Sou cliente / Meu Plano</h4>
+        </div>
+        <div class="container__atendimento__card">
+          <h4>WhatsApp</h4>
+          <p>
+            Central de Atendimento Hubcare Administradora Regiões Sul, Sudeste e
+            Centro Oeste Telefone: (48) 3028.4360 Whatsapp: (48) 99974-0146
+            E-mail: contato@hubcare.adm.br
+          </p>
+        </div>
+        <div class="container__atendimento__card">
+          <h4>Telefone e Emails / Matrize demais Regiões / Nordeste</h4>
+          Central de Atendimento Hubcare Administradora Região Nordeste
+          Telefone/Whatsapp: (81) 3231.1584 E-mail: hubcarerecife@gmail.com Rua
+          Pintor Lula Cardoso Ayres, 3196, Imbiribeira – Recife/PE
+        </div>
+        <div class="container__atendimento__card">
+          <h4>Ouvidoria / Email: xxx@xxx</h4>
+        </div>
       </div>
     </section>
     <section class="tags-ans container">Tags da ANS</section>
