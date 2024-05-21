@@ -262,6 +262,7 @@ header {
 .container__atendimento__card {
   border: 1px solid #cccac9;
   box-shadow: 2px 2px #0000004d;
+  font-size: 85%;
 }
 
 .show {
