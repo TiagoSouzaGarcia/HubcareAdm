@@ -355,3 +355,17 @@ header {
   align-items: center;
   gap: 5px;
 }
+
+.privacidade, .termo-uso {
+  padding: 1.2rem 2rem;
+}
+
+.privacidade a, .termo-uso a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.in-between {
+  padding: 1.4rem 0;
+  border-right: 1px solid var(--cinza-branco);
+}
