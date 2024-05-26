@@ -127,7 +127,7 @@ header {
 }
 
 .hero {
-  background-image: url("/assets/banners/banner-home-07.jpg");
+  background-image: url("/assets/banners/pexels-pixabay-39691.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--branco);
@@ -136,9 +136,9 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: start;
-  justify-content: end;
+  justify-content: center;
   gap: 10%;
-  padding: 5%;
+  padding: 2% 5%;
 }
 
 .hero h2 {
@@ -265,6 +265,43 @@ header {
   font-size: 85%;
 }
 
+.container__tags-ans {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+}
+
+.tags-ans__flags__list {
+  display: grid;
+  align-items: flex-end;
+  gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.tags-ans__flags__item {
+  background-color: var(--branco);
+}
+
+.caixa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 2px;
+  width: fit-content;
+}
+
+.selo {
+  border: 1px solid white;
+  border-radius: 1px;
+  margin: 1px;
+  padding: 5px;
+  color: white;
+}
+
 .show {
   display: block;
 }
@@ -356,11 +393,13 @@ header {
   gap: 5px;
 }
 
-.privacidade, .termo-uso {
+.privacidade,
+.termo-uso {
   padding: 1.2rem 2rem;
 }
 
-.privacidade a, .termo-uso a {
+.privacidade a,
+.termo-uso a {
   text-decoration: none;
   color: var(--branco);
 }
