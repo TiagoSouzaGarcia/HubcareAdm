@@ -1,9 +1,8 @@
-@import url("https://befonts.com/kohinoor-font-family.html");
-
 :root {
   --azul-escuro: #22567b;
   --azul-claro: #1db9de;
   --branco: #ffffff;
+  --branco-cinzento: #cccac9;
   --cinza-fundo: #f4f2f1;
   --cinza-escuro: #bcbdbf;
   --cinza-claro: #dedede;
@@ -11,15 +10,20 @@
   --preto: #000111;
 }
 
-/* A tela quebra width 975px para baixo */
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
 
 @font-face {
-  font-family: "kohinoor-bangla", sans-serif;
-  src: url(./assets/KohinoorLatin-Light.otf) format("otf");
+  font-family: "Kohinoor-bangla", "Raleway", sans-serif;
+  src: url(../assets/kohinoor-font-family/KohinoorLatin-Medium.otf)
+    format("otf") format("otf");
+  font-family: "Kohinoor-bangla", "Raleway", sans-serif;
+  font-weight: bold;
+  src: url(../assets/kohinoor-font-family/KohinoorLatin-Bold.otf) format("otf");
 }
 
 * {
-  font-family: "kohinoor-bangla", sans-serif;
+  font-family: "Kohinoor-bangla", "Raleway", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -184,7 +188,7 @@ header {
   background-color: var(--branco);
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   border-radius: 32px;
   gap: 0.4rem;
   padding: 10%;
@@ -247,42 +251,88 @@ header {
   gap: 2%;
 }
 
+.atendimento__cliente__titulo {
+  padding: 1rem 0;
+}
+
 .container__atendimento {
-  color: var(--azul-claro);
+  color: var(--azul-escuro);
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 2px;
+  width: 100%;
 }
 
 .container__atendimento p {
-  color: var(--preto);
+  font-size: 1.5rem;
+  color: var(--azul-claro);
 }
 
 .container__atendimento__card {
-  border: 1px solid #cccac9;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--branco-cinzento);
   box-shadow: 2px 2px #0000004d;
-  font-size: 85%;
+  height: auto;
 }
 
-.container__tags-ans {
+.container__atendimento__card--texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container__atendimento__card img {
+  width: 2rem;
+}
+
+.container__atendimento__card a {
+  text-decoration: none;
+}
+
+.tags-ans__container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   gap: 2rem;
-  width: 100%;
+  background-color: #f4f2f1;
+  height: 20vh;
+  margin: 2rem 0 0;
+  padding: 3rem;
+  font-size: 1rem;
 }
 
 .tags-ans__flags__list {
   display: grid;
   align-items: flex-end;
   gap: 1rem;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .tags-ans__flags__item {
-  background-color: var(--branco);
+  box-sizing: inherit;
+}
+
+.tags-ans__flags__item p {
+  font-size: 0.8rem;
+}
+
+.divider {
+  height: 12vh;
+  border: 1px solid var(--branco-cinzento);
+  opacity: 1;
+  overflow: visible;
+}
+
+.divider-horizontal {
+  border: 1px solid var(--branco-cinzento);
+  margin: 1rem;
+  opacity: 1;
+  overflow: visible;
 }
 
 .caixa {
@@ -291,7 +341,7 @@ header {
   align-items: center;
   background-color: black;
   padding: 2px;
-  width: fit-content;
+  width: max-content;
 }
 
 .selo {
@@ -300,6 +350,7 @@ header {
   margin: 1px;
   padding: 5px;
   color: white;
+  font-size: 0.8rem;
 }
 
 .show {
@@ -329,6 +380,7 @@ header {
   align-items: center;
   color: var(--preto);
   transition: opacity 0.15s ease-in-out;
+  text-decoration: none;
 }
 
 .w-btn span {

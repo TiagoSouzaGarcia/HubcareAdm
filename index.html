@@ -6,13 +6,14 @@
     <title>Hubcare</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/dropdown.js"></script>
     <script src="js/observer.js"></script>
+    <script src="js/navigation.js" defer></script>
   </head>
 
   <body>
@@ -112,46 +113,88 @@
       </p>
       <div class="operadoras-parceiras__lista">
         <a href="">
-          <img src="/assets/logos/parceiras/yousaude.png" alt="" />
-          YouSaude
+          <img
+            src="/assets/logos/parceiras/maio-2024/Brasil Saúde.png"
+            alt=""
+          />
+          Brasil Saúde
         </a>
-        <img src="/assets/logos/parceiras/logo-leve-saude.jpg" alt="" />
-        <img src="/assets/logos/parceiras/logo-saude-sao-jose.jpg" alt="" />
-        <img src="/assets/logos/parceiras/logo_levmed.jpg" alt="" />
-        <img src="/assets/logos/parceiras/unimed-rondonopolis.png" alt="" />
-        <img
-          src="/assets/logos/parceiras/UnimedRioV-e1605103927381.png"
-          alt=""
-        />
-        <img src="/assets/logos/parceiras/uniodonto-paulista.png" alt="" />
+        <a href="">
+          <img src="/assets/logos/parceiras/logo-leve-saude.jpg" alt="" />
+          LeveSaude
+        </a>
+        <a href="">
+          <img src="/assets/logos/parceiras/logo-saude-sao-jose.jpg" alt="" />
+          Sao Jose Saude
+        </a>
+        <a href="">
+          <img src="/assets/logos/parceiras/logo_levmed.jpg" alt="" />
+          Levmed
+        </a>
+        <a href="">
+          <img src="/assets/logos/parceiras/unimed-rondonopolis.png" alt="" />
+          Unimed Rondonopolis
+        </a>
+        <a href="">
+          <img src="/assets/logos/parceiras/uniodonto-paulista.png" alt="" />
+          Uniodonto Paulista
+        </a>
+        <a href="">
+          <img
+            src="/assets/logos/parceiras/UnimedRioV-e1605103927381.png"
+            alt=""
+          />
+          Unimed Rio
+        </a>
       </div>
     </section>
     <section class="atendimento__cliente">
-      <h3>Atendimento aos clientes</h3>
+      <div class="atendimento__cliente__titulo">
+        <h3><strong>Atendimento aos clientes</strong></h3>
+        <hr
+          class="divider-horizontal"
+          aria-orientation="horizontal"
+          role="separator"
+        />
+      </div>
+
       <div class="container__atendimento">
         <div class="container__atendimento__card">
-          <h4>Sou cliente / Meu Plano</h4>
+          <img src="./assets/icones/do-utilizador-escuro.svg" alt="" />
+          <h4>Meu Plano</h4>
+          <a href="">
+            <p>Acessar Área do Cliente</p>
+          </a>
         </div>
         <div class="container__atendimento__card">
-          <h4>WhatsApp</h4>
-          <p>
-            Central de Atendimento Hubcare Administradora Regiões Sul, Sudeste e
-            Centro Oeste Telefone: (48) 3028.4360 Whatsapp: (48) 99974-0146
-            E-mail: contato@hubcare.adm.br
-          </p>
+          <img src="./assets/icones/chamada-telefonica.svg" alt="" />
+          <h4>Matriz e demais regiões</h4>
+          <div class="container__atendimento__card--texto">
+            <p>Regiões Sul, Sudeste e Centro Oeste</p>
+            <p>Telefone: (48) 3028.4360</p>
+            <p>Whatsapp: (48) 99974-0146</p>
+            <p>E-mail: contato@hubcare.adm.br</p>
+          </div>
         </div>
         <div class="container__atendimento__card">
-          <h4>Telefone e Emails / Matrize demais Regiões / Nordeste</h4>
-          Central de Atendimento Hubcare Administradora Região Nordeste
-          Telefone/Whatsapp: (81) 3231.1584 E-mail: hubcarerecife@gmail.com Rua
-          Pintor Lula Cardoso Ayres, 3196, Imbiribeira – Recife/PE
+          <img src="./assets/icones/chamada-telefonica.svg" alt="" />
+          <h4>Atendimento Nordeste</h4>
+          <div class="container__atendimento__card--texto">
+            <p>Região Nordeste</p>
+            <p>Telefone/Whatsapp: (81) 3231.1584</p>
+            <p>E-mail:hubcarerecife@gmail.com</p>
+          </div>
         </div>
         <div class="container__atendimento__card">
-          <h4>Ouvidoria / Email: xxx@xxx</h4>
+          <img src="./assets/icones/envelopes.svg" alt="" />
+          <h4>Ouvidoria</h4>
+          <div class="container__atendimento__card--texto">
+            <p>Email: contato@hubcare.adm.br</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="container__tags-ans">
+    <section class="tags-ans__container">
       <a href="https://www.gov.br/ans/pt-br" target="_blank">
         <img
           src="./assets/selos/ans_logo_horiz.gif"
@@ -160,85 +203,85 @@
       </a>
       <ul class="tags-ans__flags__list">
         <li class="tags-ans__flags__item">
-          Brasil Saúde
+          <p>Brasil Saúde</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 42.258-4</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Fox Saúde
+          <p>Fox Saúde</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 42.249-5</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Odontomaxi
+          <p>Odontomaxi</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 41.958-3</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Levmed
+          <p>Levmed</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 42.232-1</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Tempomed
+          <p>Tempomed</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 42.277-1</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Hapvida Clinipam
+          <p>Hapvida Clinipam</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 36.825-3</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Uniodonto
+          <p>Uniodonto</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 41.562-6</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Amil
+          <p>Amil</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 32.630-5</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Sulamerica
+          <p>Sulamerica</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 00.624-6</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Bradesco
+          <p>Bradesco</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 00.571-1</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Bradesco Saúde
+          <p>Bradesco Saúde</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 42.171-5</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Hapvida CCG
+          <p>Hapvida CCG</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 39.280-4</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          Odontoprev
+          <p>Odontoprev</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 30.194-9</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
-          CNU
+          <p>CNU</p>
           <div class="caixa">
             <span class="selo">ANS - n.º 33.967-9</span>
           </div>
@@ -246,6 +289,14 @@
       </ul>
 
       <hr class="divider" aria-orientation="vertical" role="separator" />
+      <ul class="tags-ans__flags__list__hubcare">
+        <li lass="tags-ans__flags__item">
+          Hubcare
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.030-1</span>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="locations_map"></section>
 
@@ -298,6 +349,5 @@
         ></a>
       </div>
     </footer>
-    <script src="js/navigation.js"></script>
   </body>
 </html>
