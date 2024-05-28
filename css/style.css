@@ -1,5 +1,5 @@
 @import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
-@import url(./styles/carrossel.css);
+@import url(./css/carrossel.css);
 
 :root {
   --azul-escuro: #22567b;
@@ -139,7 +139,7 @@ header {
 }
 
 .hero {
-  background-image: url("/assets/banners/pexels-pixabay-39691.jpg");
+  background-image: url("../assets/banners/pexels-pixabay-39691.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--branco);
@@ -252,9 +252,14 @@ header {
 .operadoras-parceiras__lista {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding: 2%;
   gap: 2%;
+}
+
+.operadoras-parceiras__lista img {
+  max-width: 180px;
 }
 
 .atendimento__cliente {
