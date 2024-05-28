@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/dropdown.js"></script>
@@ -54,7 +54,13 @@
         </div>
 
         <div class="dropdown">
-          <button class="drop-btn" id="btn_faleconosco">FALE CONOSCO</button>
+          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
+            FALE CONOSCO
+          </button>
+          <div class="dropdown-content" id="dropMenu2">
+            <a href="#">Sou Cliente</a>
+            <a href="#">Quero ser Cliente</a>
+          </div>
         </div>
       </div>
     </header>
@@ -209,26 +215,30 @@
           <img src="./assets/icones/chamada-telefonica.svg" alt="" />
           <h4>Matriz e demais regiões</h4>
           <div class="container__atendimento__card--texto">
-            <p><i class="fab fa-telephone"></i
+            <p><i class="fa fa-phone"></i
               > Telefone: (48) 3028.4360</p>
             <p><i class="fab fa-whatsapp"></i
               > Whatsapp: (48) 99974-0146</p>
-            <p> E-mail: contato@hubcare.adm.br</p>
+            <p><i class="fa fa-envelope-o"></i
+              > E-mail: contato@hubcare.adm.br</p>
           </div>
         </div>
         <div class="container__atendimento__card">
           <img src="./assets/icones/chamada-telefonica.svg" alt="" />
           <h4>Filial Nordeste</h4>
           <div class="container__atendimento__card--texto">
-            <p>Telefone/Whatsapp: (81) 3231.1584</p>
-            <p>E-mail:hubcarerecife@gmail.com</p>
+            <p><i class="fa fa-phone"></i
+              > Telefone/Whatsapp: (81) 3231.1584</p>
+            <p><i class="fa fa-envelope"></i
+              > E-mail:hubcarerecife@gmail.com</p>
           </div>
         </div>
         <div class="container__atendimento__card">
           <img src="./assets/icones/envelopes.svg" alt="" />
           <h4>Ouvidoria</h4>
           <div class="container__atendimento__card--texto">
-            <p>Email: contato@hubcare.adm.br</p>
+            <p><i class="fa fa-envelope"></i
+              > Email: contato@hubcare.adm.br</p>
           </div>
         </div>
       </div>
@@ -374,7 +384,7 @@
       </div>
       <div class="in-between"></div>
       <div class="social-icons">
-        <p>Siga nossas redes sociais</p>
+        <p>Siga nossas redes sociais</p><br>
         <a href="https://facebook.com" target="_blank"
           ><i class="fab fa-facebook"></i
         ></a>
