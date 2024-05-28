@@ -1,3 +1,6 @@
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url(./styles/carrossel.css);
+
 :root {
   --azul-escuro: #22567b;
   --azul-claro: #1db9de;
@@ -9,8 +12,6 @@
   --cinza-branco: #e6e6e6;
   --preto: #000111;
 }
-
-@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
 
 @font-face {
   font-family: "Kohinoor-bangla", "Raleway", sans-serif;
@@ -193,18 +194,19 @@ header {
 }
 
 .empresas__card {
-  background-color: var(--branco);
   display: flex;
   flex-direction: column;
-
-  border-radius: 32px;
-  gap: 0.4rem;
+  justify-content: ce;
+  box-sizing: border-box;
   padding: 10%;
+  background-color: var(--branco);
+  border-radius: 32px;
+  gap: 1rem;
 }
 
 .empresas__card img {
   min-width: 248px;
-  min-height: 132px;
+  min-height: 167px;
 }
 
 .empresas__titulo {
@@ -219,8 +221,11 @@ header {
 
 .empresas__card a {
   text-decoration: none;
-  gap: 0.5rem;
-  padding: 0.8rem;
+  padding: 1rem;
+}
+
+.empresas__card p {
+  color: var(--azul-claro);
 }
 
 .operadoras-parceiras {
@@ -422,8 +427,9 @@ header {
 .footer {
   background-color: rgb(33, 33, 33);
   color: #fff;
-  padding: 20px;
   display: flex;
+  height: 30%;
+  padding: 3rem;
   justify-content: space-between;
   align-items: center;
 }
