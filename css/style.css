@@ -88,17 +88,18 @@ header {
 }
 
 .dropdown .drop-btn {
-  color: white;
+  color: var(--azul-escuro);
   background: none;
   border: none;
   padding: 10px;
   font-size: 16px;
+  font-weight: bold;
   position: relative; /* Relative to its position for absolute dropdown */
   transition: color 0.15s ease-in;
 }
 
 .drop-btn:hover {
-  color: var(--azul-escuro);
+  color: white;
   cursor: pointer;
 }
 
@@ -109,7 +110,7 @@ header {
   background-color: var(--cinza-claro);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
-  padding: 10px;
+  padding: 10px 0px;
   top: 100%; /* 100% = Position below the button */
   left: 0; /* Align with the left side of the button */
   width: 100%;
@@ -134,7 +135,6 @@ header {
   background-image: url("../assets/banners/pexels-pixabay-39691.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 90%;
   color: var(--branco);
   height: 100vh;
   width: 100vw;
@@ -144,18 +144,21 @@ header {
   align-items: start;
   justify-content: center;
   gap: 10%;
+}
+
+.hero__items {
   padding: 8% 5%;
 }
 
-.hero h2 {
+.hero__items h2 {
   font-size: 6rem;
 }
 
-.hero h3 {
+.hero__items h3 {
   font-size: 4rem;
 }
 
-.hero p {
+.hero__items p {
   font-size: 2rem;
 }
 
@@ -170,7 +173,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 1.5% 1%;
-  background-color: var(--cinza-claro);
+  background-color: var(--cinza-branco);
 }
 
 .empresas__container img {
@@ -282,7 +285,7 @@ header {
   flex-direction: column;
   padding: 1rem;
   gap: 1.5rem;
-  border: 1px solid var(--branco-cinzento);
+  background-color: var(--cinza-fundo);
   box-shadow: 2px 2px #0000004d;
   height: auto;
 }
