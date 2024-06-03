@@ -333,7 +333,10 @@ header {
 }
 
 .container__atendimento__card a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  gap: 0.5rem;
 }
 
 .tags-ans__container {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubcare</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/observer.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="header__top">
+        <img
+          src="./assets/logos/hubcare-logo.png"
+          alt="Hubcare Logo"
+          height="auto"
+        />
+
+        <div class="three-btn-header">
+          <a href="#">Portal Corretor</a>
+          <a href="https://painel.inova.adm.br">Portal Cliente</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="subheader">
+        <div class="dropdown">
+          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn">
+            A HUBCARE
+          </button>
+          <div class="dropdown-content" id="dropMenu1">
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#quem-somos">Empresas do Grupo</a>
+            <a href="#atendimento-cliente">Onde estamos</a>
+            <a href="#">Trabalhe conosco</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_corretora">
+            PLANOS DE SAÚDE E BENEFÍCIOS
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_digital">TELEMEDICINA</button>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
+            FALE CONOSCO
+          </button>
+          <div class="dropdown-content" id="dropMenu2">
+            <a href="https://painel.inova.adm.br" id="">Sou Cliente</a>
+            <a href="#atendimento-cliente">Quero ser Cliente</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
