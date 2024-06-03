@@ -36,9 +36,9 @@
             A HUBCARE
           </button>
           <div class="dropdown-content" id="dropMenu1">
-            <a href="#">Quem somos</a>
-            <a href="#">Empresas do Grupo</a>
-            <a href="#">Onde estamos</a>
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#quem-somos">Empresas do Grupo</a>
+            <a href="#atendimento-cliente">Onde estamos</a>
             <a href="#">Trabalhe conosco</a>
           </div>
         </div>
@@ -58,8 +58,8 @@
             FALE CONOSCO
           </button>
           <div class="dropdown-content" id="dropMenu2">
-            <a href="#">Sou Cliente</a>
-            <a href="#">Quero ser Cliente</a>
+            <a href="#atendimento-cliente">Sou Cliente</a>
+            <a href="#atendimento-cliente">Quero ser Cliente</a>
           </div>
         </div>
       </div>
@@ -76,17 +76,24 @@
         </div>
       </div>
     </section>
-    <section class="empresas__container">
+    <section class="empresas__container" id="quem-somos">
       <h2 class="empresas__titulo">Empresas Hubcare</h2>
       <div class="empresas__lista">
         <div class="empresas__card">
           <a href="https://www.hubcare.adm.br">
-            <img
+            <!-- <img
               src="./assets/logos/logo_hub_administradora.jpg"
+              alt="Logo hubcare administradora de beneficios"
+            /> -->
+            <img
+              src="./assets/logos/hubcare-logo.png"
               alt="Logo hubcare administradora de beneficios"
             />
             <h3 class="empresas__item">Hubcare Administradora de Benefícios</h3>
-            <p>Sobre Administradora de benefícios</p>
+            <p>
+              Estipulação e administração de planos de saúde para contratos
+              pessoa jurídica nas modalidades coletivo por adesão e empresariais
+            </p>
           </a>
         </div>
         <div class="empresas__card">
@@ -96,7 +103,10 @@
               alt="Logo da hubcare gestão em saúde"
             />
             <h3 class="empresas__item">Hubcare Corretora</h3>
-            <p>Sobre a Corretora</p>
+            <p>
+              Comercializa planos de saúde e benefícios para pessoas físicas e
+              jurídicas
+            </p>
           </a>
         </div>
         <div class="empresas__card">
@@ -106,96 +116,110 @@
               alt="Logo da Hubcare digital"
             />
             <h3 class="empresas__item">Hubcare Digital</h3>
-            <p>Telemedicina disponível em qualquer lugar!</p>
+            <p>
+              Disponibilização de telemedicina e mais benefícios de forma
+              prática e segura
+            </p>
           </a>
         </div>
       </div>
     </section>
-    <section class="operadoras-parceiras container">
+    <section class="operadoras-parceiras">
       <h2 class="operadoras-parceiras__titulo">
-        A Hubcare trabalha com as principais Operadoras de planos de saúde e odontológicos
+        A Hubcare trabalha com as principais Operadoras de planos de saúde e
+        odontológicos
       </h2>
       <p class="operadoras-parceiras__subtitulo">
         Proteja sua saúde com o melhor da medicina brasileira
       </p>
       <div class="operadoras-parceiras__lista">
-        <a href="">
-          <img
-            src="./assets/logos/parceiras/maio-2024/Brasil Saúde.png"
-            alt=""
-          />
-          <!--  Brasil Saúde -->
-        </a>
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/logo-odontomaxi-branco.png"
-            alt=""
-          />
-          <!-- Odontomaxi --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/levemed-logo.png"
-            alt=""
-          /><!-- Levmed --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/Logo_Tempo-Med_horizontal.svg"
-            alt=""
-          /><!-- Tempomed --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/hapvida.png"
-            alt=""
-          /><!-- Hapvida Clinipam --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/Uniodonto.png"
-            alt=""
-          /><!-- Uniodonto --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/logo-amil.png"
-            alt=""
-          /><!-- Amil --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/logo-sulamerica.png"
-            alt=""
-          /><!-- Sulamerica --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/logo bradesco.svg"
-            alt=""
-          /><!-- Bradesco --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/Logo_Home_ccg-saudepng.png"
-            alt=""
-          /><!-- Hapvida CCG --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/logo odontoprev.svg"
-            alt=""
-          /><!-- Odontoprev --></a
-        >
-        <a href=""
-          ><img
-            src="./assets/logos/parceiras/maio-2024/Logo-Unimed.png"
-            alt=""
-          /><!-- CNU --></a
-        >
+        <div class="operadoras-parceiras__card">
+          <a href="https://planobrasilsaude.com.br/sobre">
+            <img
+              src="./assets/logos/parceiras/maio-2024/Brasil Saúde.png"
+              alt=""
+            />
+            <!--  Brasil Saúde -->
+          </a>
+          <p>Brasil Saúde</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://odontomaxi.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/logo-odontomaxi-branco.png"
+              alt=""
+            />
+            <!-- Odontomaxi --></a
+          >
+          <p>Odontomaxi</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.levmed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/levemed-logo.png"
+              alt=""
+            /><!-- Levmed --></a
+          >
+          <p>Levmed</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.tempomed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Logo_Tempo-Med_horizontal.png"
+              alt=""
+            /><!-- Tempomed --></a
+          >
+          <p>Tempomed</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://gndisul.com.br/orcamento"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/hapvida.png"
+              alt=""
+            /><!-- Hapvida Clinipam --></a
+          >
+          <p>Hapvida Uniplan</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.uniodontosc.coop.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Uniodonto.png"
+              alt=""
+            /><!-- Uniodonto --></a
+          >
+          <p>Uniodonto</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/logo-amil.png"
+              alt=""
+            /><!-- Amil --></a
+          >
+          <p>Amil</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://saude.sulamericaseguros.com.br/segurado/login/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/logo-sulamerica.png"
+              alt=""
+            /><!-- Sulamerica --></a
+          >
+          <p>Sulamerica</p>
+        </div>
+
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.ccgsaude.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Logo_Home_ccg-saudepng.png"
+              alt=""
+            /><!-- Hapvida CCG --></a
+          >
+          <p>Hapvida CCG</p>
+        </div>
       </div>
     </section>
-    <section class="atendimento__cliente container">
+    <section class="atendimento__cliente" id="atendimento-cliente">
       <div class="atendimento__cliente__titulo">
         <h3><strong>Atendimento aos Clientes</strong></h3>
         <hr
@@ -209,35 +233,32 @@
         <div class="container__atendimento__card">
           <h4>Sou Cliente</h4>
           <a href="#">
-        <p><i class="fa fa-person"></i
-              > Acessar Área do Cliente</p>
+            <p><i class="fa fa-person"></i> Acessar Área do Cliente</p>
           </a>
         </div>
         <div class="container__atendimento__card">
           <h4>Matriz e demais regiões</h4>
           <div class="container__atendimento__card--texto">
-            <p><i class="fa fa-phone"></i
-              > Telefone: (48) 3028.4360</p>
-            <p><i class="fab fa-whatsapp"></i
-              > Whatsapp: (48) 99974-0146</p>
-            <p><i class="fa fa-envelope"></i
-              > E-mail: contato@hubcare.adm.br</p>
+            <p><i class="fa fa-phone"></i> Telefone: (48) 3028.4360</p>
+            <p><i class="fa fa-phone"></i> Telefone: (48) 3212-2050</p>
+            <p><i class="fab fa-whatsapp"></i> Whatsapp: (48) 99974-0146</p>
+            <p><i class="fa fa-envelope"></i> E-mail: contato@hubcare.adm.br</p>
           </div>
         </div>
         <div class="container__atendimento__card">
           <h4>Filial Nordeste</h4>
           <div class="container__atendimento__card--texto">
-            <p><i class="fa fa-phone"></i
-              > Telefone/Whatsapp: (81) 3231.1584</p>
-            <p><i class="fa fa-envelope"></i
-              > E-mail: hubcarerecife@gmail.com</p>
+            <p><i class="fa fa-phone"></i> Telefone/Whatsapp: (81) 3231.1584</p>
+            <p>
+              <i class="fa fa-envelope"></i> E-mail:
+              comercial.recife@hubcare.adm.br
+            </p>
           </div>
         </div>
         <div class="container__atendimento__card">
           <h4>Ouvidoria</h4>
           <div class="container__atendimento__card--texto">
-            <p><i class="fa fa-envelope"></i
-              > Email: comercial.recife@hubcare.adm.br</p>
+            <p><i class="fa fa-envelope"></i> Email: contato@hubcare.adm.br</p>
           </div>
         </div>
       </div>
@@ -401,5 +422,7 @@
       </div>
     </footer>
     <script src="./js/navigation.js" defer></script>
+    <script src="./js/ancoras.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
