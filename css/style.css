@@ -71,7 +71,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 0.2rem 4rem;
+  padding: 0.2rem 2.5rem;
   font-size: 1.5em;
   border-radius: 1.9rem;
   background-color: var(--azul-escuro);
@@ -84,7 +84,7 @@ header {
 .three-btn-header a:hover {
   background-color: var(--azul-claro);
   cursor: pointer;
-  box-shadow: 0px 6px 12px #000000a0;
+  box-shadow: 0px 5px 10px #000000a0;
 }
 
 .dropdown .drop-btn {
