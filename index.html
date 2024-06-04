@@ -25,7 +25,7 @@
         />
 
         <div class="three-btn-header">
-          <a href="#">Portal Corretor</a>
+          <a href="https://portal.inova.adm.br">Portal Corretor</a>
           <a href="https://painel.inova.adm.br">Portal Cliente</a>
           <a href="#">Login</a>
         </div>
@@ -36,7 +36,7 @@
             A HUBCARE
           </button>
           <div class="dropdown-content" id="dropMenu1">
-            <a href="aHubcare.html">Quem somos</a>
+            <a href="sobre.html">Quem somos</a>
             <a href="#quem-somos">Empresas do Grupo</a>
             <a href="#atendimento-cliente">Onde estamos</a>
             <a href="#">Trabalhe conosco</a>
@@ -54,13 +54,9 @@
         </div>
 
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
-            FALE CONOSCO
+          <button class="drop-btn">
+            <a href="#atendimento-cliente" class="drop-btn">FALE CONOSCO</a>
           </button>
-          <div class="dropdown-content" id="dropMenu2">
-            <a href="https://painel.inova.adm.br" id="">Sou Cliente</a>
-            <a href="#atendimento-cliente">Quero ser Cliente</a>
-          </div>
         </div>
       </div>
     </header>
@@ -134,6 +130,22 @@
       </p>
       <div class="operadoras-parceiras__lista">
         <div class="operadoras-parceiras__card">
+          <a href="https://www.levmed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/levemed-logo.png"
+              alt=""
+            /><!-- Levmed --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.tempomed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Logo_Tempo-Med_horizontal.png"
+              alt=""
+            /><!-- Tempomed --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
           <a href="https://planobrasilsaude.com.br/sobre">
             <img
               src="./assets/logos/parceiras/maio-2024/Brasil Saúde.png"
@@ -141,7 +153,6 @@
             />
             <!--  Brasil Saúde -->
           </a>
-          <p>Brasil Saúde</p>
         </div>
         <div class="operadoras-parceiras__card">
           <a href="https://odontomaxi.com.br/"
@@ -151,34 +162,14 @@
             />
             <!-- Odontomaxi --></a
           >
-          <p>Odontomaxi</p>
         </div>
-        <div class="operadoras-parceiras__card">
-          <a href="https://www.levmed.com.br/"
-            ><img
-              src="./assets/logos/parceiras/maio-2024/levemed-logo.png"
-              alt=""
-            /><!-- Levmed --></a
-          >
-          <p>Levmed</p>
-        </div>
-        <div class="operadoras-parceiras__card">
-          <a href="https://www.tempomed.com.br/"
-            ><img
-              src="./assets/logos/parceiras/maio-2024/Logo_Tempo-Med_horizontal.png"
-              alt=""
-            /><!-- Tempomed --></a
-          >
-          <p>Tempomed</p>
-        </div>
-        <div class="operadoras-parceiras__card">
+          <div class="operadoras-parceiras__card">
           <a href="https://gndisul.com.br/orcamento"
             ><img
               src="./assets/logos/parceiras/maio-2024/hapvida.png"
               alt=""
             /><!-- Hapvida Clinipam --></a
           >
-          <p>Hapvida Uniplan</p>
         </div>
         <div class="operadoras-parceiras__card">
           <a href="https://www.uniodontosc.coop.br/"
@@ -187,7 +178,22 @@
               alt=""
             /><!-- Uniodonto --></a
           >
-          <p>Uniodonto</p>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/clinipam.png"
+              alt=""
+            /><!-- Amil --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/fox-saude.png"
+              alt=""
+            /><!-- Amil --></a
+          >
         </div>
         <div class="operadoras-parceiras__card">
           <a href="https://institucional.amil.com.br/"
@@ -196,26 +202,6 @@
               alt=""
             /><!-- Amil --></a
           >
-          <p>Amil</p>
-        </div>
-        <div class="operadoras-parceiras__card">
-          <a href="https://saude.sulamericaseguros.com.br/segurado/login/"
-            ><img
-              src="./assets/logos/parceiras/maio-2024/logo-sulamerica.png"
-              alt=""
-            /><!-- Sulamerica --></a
-          >
-          <p>Sulamerica</p>
-        </div>
-
-        <div class="operadoras-parceiras__card">
-          <a href="https://www.ccgsaude.com.br/"
-            ><img
-              src="./assets/logos/parceiras/maio-2024/Logo_Home_ccg-saudepng.png"
-              alt=""
-            /><!-- Hapvida CCG --></a
-          >
-          <p>Hapvida CCG</p>
         </div>
       </div>
     </section>
@@ -232,7 +218,7 @@
       <div class="container__atendimento">
         <div class="container__atendimento__card">
           <h4>Sou Cliente</h4>
-          <a href="https://painel.inova.adm.br"">
+          <a href="https://painel.inova.adm.br">
             <p><i class="fa fa-person"></i> Acessar Área do Cliente</p>
           </a>
         </div>
@@ -262,7 +248,7 @@
         <div class="container__atendimento__card">
           <h4>Ouvidoria</h4>
           <div class="container__atendimento__card--texto">
-            <p><i class="fa fa-envelope"></i> Email: contato@hubcare.adm.br</p>
+            <p><i class="fa fa-envelope"></i> Email: ouvidoria@hubcare.adm.br</p>
           </div>
         </div>
       </div>
@@ -284,7 +270,7 @@
         <li class="tags-ans__flags__item">
           <p>Fox Saúde</p>
           <div class="caixa">
-            <span class="selo">ANS - n.º 42.249-5</span>
+            <span class="selo">ANS - n.º 42.392-1</span>
           </div>
         </li>
         <li class="tags-ans__flags__item">
@@ -401,7 +387,7 @@
       </div>
       <div class="in-between"></div>
       <div class="privacidade">
-        <a href="#">Política de Privacidade</a>
+        <a href="Privacidade.html">Política de Privacidade</a>
       </div>
       <div class="termo-uso">
         <a href="#">Termos de Uso</a>
