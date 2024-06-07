@@ -1,5 +1,5 @@
 @import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(./css/carrossel.css);
 
 :root {
@@ -15,7 +15,8 @@
 }
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -77,7 +78,7 @@ header {
   text-align: center;
   padding: 0.2rem 2.5rem;
   font-size: 1.5em;
-  border-radius: 1.9rem;
+  border-radius: 2.7rem;
   background-color: var(--azul-escuro);
   color: var(--branco);
   transition: background-color 0.2s ease-in, box-shadow 0.2s;
@@ -100,6 +101,7 @@ header {
   font-weight: bold;
   position: relative; /* Relative to its position for absolute dropdown */
   transition: color 0.15s ease-in;
+  text-decoration: none;
 }
 
 .drop-btn:hover {
@@ -150,22 +152,41 @@ header {
   gap: 10%;
 }
 
+.sobre {
+  margin-top: 100px;
+}
+
 .historia-hubcare {
   color: var(--azul-escuro);
   height: 100vh;
   width: 100vw;
+  margin-top: 5px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
   gap: 10%;
+  padding: 20px;
 }
 
-.titulo_pagina {
+.historia-hubcare__paragrafo {
+  margin-left: 20px;
+  margin-right: 100px;
+  font-size: 1.2em;
+}
+
+.historia-hubcare__lista {
+  margin-left: 20px;
+  margin-right: 100px;
+  font-size: 1.2em;
+}
+
+.titulo_sobre {
   color: var(--azul-escuro);
   font-size: 2rem;
-  margin-top: auto;
+  align-self: center;
 }
 
 .hero__items {
@@ -221,8 +242,8 @@ header {
 }
 
 .empresas__card img {
-  min-width: 248px;
-  min-height: 167px;
+  min-height: auto;
+  min-width: 75%;
 }
 
 .empresas__titulo {
@@ -348,6 +369,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.container__atendimento__card--texto p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container__atendimento__card img {
@@ -513,6 +539,11 @@ header {
   gap: 5px;
 }
 
+.copyright img {
+  width: 50%;
+  height: auto;
+}
+
 .privacidade,
 .termo-uso {
   padding: 1.2rem 2rem;
@@ -663,7 +694,6 @@ header {
   line-height: 1.5;
   text-align: left;
   color: #7b7c7f;
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   font-size: 0.9375rem;
   box-sizing: border-box;
   margin-top: 12%;
