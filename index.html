@@ -1,21 +1,418 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Hubcare</title>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubcare</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icones/favicon.ico">
 
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/observer.js"></script>
+  </head>
 
-<body>
-   <header>
-      <div></div>
-   </header>
+  <body>
+    <header class="navbar">
+      <div class="header__top">
+        <img
+          src="./assets/logos/hubcare-logo.png"
+          alt="Hubcare Logo"
+          height="auto"
+        />
 
-   <footer>
-      <div></div>
-   </footer>
-</body>
+        <div class="three-btn-header">
+          <a href="https://portal.inova.adm.br">Portal Corretor</a>
+          <a href="https://painel.inova.adm.br">Portal Cliente</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="subheader">
+        <div class="dropdown">
+          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn botao__empresa-hubcare">
+            A HUBCARE
+          </button>
+          <div class="dropdown-content" id="dropMenu1">
+            <a href="sobre.html">Quem somos</a>
+            <a href="#quem-somos">Empresas do Grupo</a>
+            <a href="#atendimento-cliente">Onde estamos</a>
+            <a href="#">Trabalhe conosco</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_corretora">
+            PLANOS DE SAÚDE E BENEFÍCIOS
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_digital">TELEMEDICINA</button>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn">
+            <a href="#atendimento-cliente" class="drop-btn">FALE CONOSCO</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__items">
+        <h3>Hubcare</h3>
+        <h2 class="hero__titulo">
+          Cuidando da <strong>saúde</strong> da sua família
+        </h2>
+        <div class="hero__contatos">
+          <p>Telefone: (48) 3028-4360</p>
+          <p>Whatsapp: (48) 99974-0146</p>
+        </div>
+      </div>
+    </section>
+    <section class="empresas__container" id="quem-somos">
+      <h2 class="empresas__titulo">Empresas Hubcare</h2>
+      <div class="empresas__lista">
+        <div class="empresas__card">
+          <a href="sobre.html">
+            <!-- <img
+              src="./assets/logos/logo_hub_administradora.jpg"
+              alt="Logo hubcare administradora de beneficios"
+            /> -->
+            <img
+              src="./assets/logos/hubcare-logo.png"
+              alt="Logo hubcare administradora de beneficios"
+            />
+            <h3 class="empresas__item">Hubcare Administradora de Benefícios</h3>
+            <p>
+              Estipulação e administração de planos de saúde para contratos
+              pessoa jurídica nas modalidades coletivo por adesão e empresariais
+            </p>
+          </a>
+        </div>
+        <div class="empresas__card">
+          <a href="https://www.hubcaresaude.com.br">
+            <img
+              src="./assets/logos/logo_hub_gestao_saude.jpg"
+              alt="Logo da hubcare gestão em saúde"
+            />
+            <h3 class="empresas__item">Hubcare Corretora</h3>
+            <p>
+              Comercializa planos de saúde e benefícios para pessoas físicas e
+              jurídicas
+            </p>
+          </a>
+        </div>
+        <div class="empresas__card">
+          <a href="https://hubcaredigital.com.br">
+            <img
+              src="./assets/img/hubcare-digital.png"
+              alt="Logo da Hubcare digital"
+            />
+            <h3 class="empresas__item">Hubcare Digital</h3>
+            <p>
+              Disponibilização de telemedicina e mais benefícios de forma
+              prática e segura
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="operadoras-parceiras">
+      <h2 class="operadoras-parceiras__titulo">
+        A Hubcare trabalha com as principais Operadoras de planos de saúde e
+        odontológicos
+      </h2>
+      <p class="operadoras-parceiras__subtitulo">
+        Proteja sua saúde com o melhor da medicina brasileira
+      </p>
+      <div class="operadoras-parceiras__lista">
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.levmed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/levemed-logo.png"
+              alt=""
+            /><!-- Levmed --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.tempomed.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Logo_Tempo-Med_horizontal.png"
+              alt=""
+            /><!-- Tempomed --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://planobrasilsaude.com.br/sobre">
+            <img
+              src="./assets/logos/parceiras/maio-2024/Brasil Saúde.png"
+              alt=""
+            />
+            <!--  Brasil Saúde -->
+          </a>
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://odontomaxi.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/logo-odontomaxi-branco.png"
+              alt=""
+            />
+            <!-- Odontomaxi --></a
+          >
+        </div>
+          <div class="operadoras-parceiras__card">
+          <a href="https://gndisul.com.br/orcamento"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/hapvida.png"
+              alt=""
+            /><!-- Hapvida Clinipam --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://www.uniodontosc.coop.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/Uniodonto.png"
+              alt=""
+            /><!-- Uniodonto --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/clinipam.png"
+              alt=""
+            /><!-- Amil --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/fox-saude.png"
+              alt=""
+            /><!-- Amil --></a
+          >
+        </div>
+        <div class="operadoras-parceiras__card">
+          <a href="https://institucional.amil.com.br/"
+            ><img
+              src="./assets/logos/parceiras/maio-2024/logo-amil.png"
+              alt=""
+            /><!-- Amil --></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="atendimento__cliente" id="atendimento-cliente">
+      <div class="atendimento__cliente__titulo">
+        <h3><strong>Atendimento aos Clientes</strong></h3>
+        <hr
+          class="divider-horizontal"
+          aria-orientation="horizontal"
+          role="separator"
+        />
+      </div>
+
+      <div class="container__atendimento">
+        <div class="container__atendimento__card">
+          <h4>Informações Cliente</h4>
+          <a href="https://painel.inova.adm.br">
+            <p><i class="fa fa-person"></i> Sou Cliente</p>
+            <p><i class="fa fa-person"></i> Quero ser Cliente</p>
+          </a>
+        </div>
+        <div class="container__atendimento__card">
+          <h4>Matriz e demais regiões</h4>
+          <div class="container__atendimento__card--texto">
+            <p><i class="fa fa-phone"></i> Telefone: (48) 3028.4360</p>
+            <p><i class="fa fa-phone"></i> Telefone: (48) 3212-2050</p>
+            <a href="https://api.whatsapp.com/send?phone=5548999740146&text=Como%20podemos%20ajudar?" target="_blank">
+            <p><i class="fab fa-whatsapp"></i> Whatsapp: (48) 99974-0146</p></a>
+            <p><i class="fa fa-envelope"></i> E-mail: <a href="mailto:contato@hubcare.adm.br">contato@hubcare.adm.br</a></p>
+          
+          </a>
+          </div>
+        </div>
+        <div class="container__atendimento__card">
+          <h4>Filial Nordeste</h4>
+          <div class="container__atendimento__card--texto">
+            <p><i class="fa fa-phone"></i> Telefone/Whatsapp: (81) 3231.1584</p>
+            <p>
+              <i class="fa fa-envelope"></i> E-mail: <a href="mailto:comercial.recife@hubcare.adm.br">comercial.recife@hubcare.adm.br</a>
+            </p>
+          </div>
+        </div>
+        <div class="container__atendimento__card">
+          <h4>Ouvidoria</h4>
+          <div class="container__atendimento__card--texto">
+            <p><i class="fa fa-envelope"></i> Email: <a href="mailto:ouvidoria@hubcare.adm.br">ouvidoria@hubcare.adm.br</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tags-ans__container">
+      <a href="https://www.gov.br/ans/pt-br" target="_blank">
+        <img
+          src="./assets/selos/ans_logo_horiz.gif"
+          alt="Para falar com a Agência Nacional de Saúde Suplementar, a ANS, ligue para o número 08007019656"
+        />
+      </a>
+      <ul class="tags-ans__flags__list">
+        <li class="tags-ans__flags__item">
+          <p>Brasil Saúde</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.258-4</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Fox Saúde</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.392-1</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Odontomaxi</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 41.958-3</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Levmed</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.232-1</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Tempomed</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.277-1</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Hapvida Clinipam</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 36.825-3</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Uniodonto</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 41.562-6</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Amil</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 32.630-5</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Sulamerica</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 00.624-6</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Bradesco</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 00.571-1</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Bradesco Saúde</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.171-5</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Hapvida CCG</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 39.280-4</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>Odontoprev</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 30.194-9</span>
+          </div>
+        </li>
+        <li class="tags-ans__flags__item">
+          <p>CNU</p>
+          <div class="caixa">
+            <span class="selo">ANS - n.º 33.967-9</span>
+          </div>
+        </li>
+      </ul>
+
+      <hr class="divider" aria-orientation="vertical" role="separator" />
+      <ul class="tags-ans__flags__list__hubcare">
+        <li lass="tags-ans__flags__item">
+          Hubcare
+          <div class="caixa">
+            <span class="selo">ANS - n.º 42.030-1</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="locations_map"></section>
+
+    <a
+      type="button"
+      class="w-btn"
+      href="https://api.whatsapp.com/send?phone=5548999740146&text=Como%20podemos%20ajudar?"
+      target="_blank"
+    >
+      <img src="./assets/img/whatsapp_logo.png" alt="Logo do WhatsApp" />
+      <span>
+        <p class="whatsapp__message">CONTRATE AGORA</p>
+        <p class="whatsapp__number">(48)99974-0146</p>
+      </span>
+    </a>
+
+    <footer class="footer">
+      <div class="copyright">
+        <img
+          src="assets/img/monocromatic logo2.svg"
+          alt="Monocromatic Hubcare Logo"
+          width="25%"
+          height="auto"
+        />
+        <p>
+          &copy; 2024 Hubcare Administradora de Benefícios.<br />Todos os
+          direitos reservados.
+        </p>
+      </div>
+      <div class="in-between"></div>
+      <div class="privacidade">
+        <a href="Privacidade.html">Política de Privacidade</a>
+      </div>
+      <div class="termo-uso">
+        <a href="#">Termos de Uso</a>
+      </div>
+      <div class="in-between"></div>
+      <div>
+        <p>Siga nossas redes sociais:</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://whatsapp.com" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/ancoras.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
