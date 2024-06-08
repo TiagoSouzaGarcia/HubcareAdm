@@ -10,6 +10,21 @@ function updateAriaOrientation() {
   }
 }
 
-updateAriaOrientation();
+function updateHeroTitle() {
+  const heroTitle = document.querySelector(".hero__titulo");
 
-window.addEventListener("resize", updateAriaOrientation);
+  if (window.innerWidth <= 767) {
+    heroTitle.innerHTML = "Sua saúde em nossos planos";
+  } else {
+    heroTitle.innerHTML = "Cuidando da <strong>saúde</strong> da sua família";
+  }
+}
+
+function callUpdates() {
+  updateAriaOrientation();
+  updateHeroTitle();
+}
+
+callUpdates();
+
+window.addEventListener("resize", callUpdates);

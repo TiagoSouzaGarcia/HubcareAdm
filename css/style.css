@@ -1,5 +1,7 @@
 @import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @import url(./css/carrossel.css);
 
 :root {
@@ -15,7 +17,7 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans", "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
   margin: 0;
@@ -607,8 +609,12 @@ header {
     align-items: center;
   }
 
+  .botao__empresa-hubcare {
+    display: none;
+  }
+
   .header__top img {
-    max-width: 40vw;
+    max-width: 60vw;
   }
 
   .three-btn-header {
@@ -621,8 +627,8 @@ header {
 
   .three-btn-header a {
     padding: auto;
-    width: 50vw;
-    height: 10vh;
+    width: 60vw;
+    height: 5vh;
     justify-content: center;
   }
 
@@ -686,6 +692,13 @@ header {
     padding: 0;
     border: 1px solid var(--cinza-escuro);
     width: 80vw;
+  }
+}
+
+@media (min-width: 1356px) {
+  .operadoras-parceiras__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
