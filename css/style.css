@@ -293,7 +293,7 @@ header {
 
 .operadoras-parceiras__lista {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 2%;
@@ -447,6 +447,7 @@ header {
   padding: 5px;
   color: white;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .show {
@@ -671,6 +672,32 @@ header {
   .container__atendimento__card {
     align-items: center;
     height: max-content;
+  }
+
+  .tags-ans__flags__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .caixa {
+    min-width: 90px;
+    max-width: 90px;
+  }
+
+  .selo {
+    font-size: 0.6rem;
+    padding: 1px;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .w-btn {
+    width: fit-content;
+    padding: 1rem;
+    left: auto;
+    right: auto;
+    margin: 0 0 1rem 1rem;
   }
 
   .footer {
