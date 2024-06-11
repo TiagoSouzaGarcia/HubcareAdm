@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hubcare</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icones/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/icones/favicon.ico" />
 
     <link rel="stylesheet" href="css/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v9.2.4/ol.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/dropdown.js"></script>
     <script src="./js/observer.js"></script>
   </head>
-  
+
   <body>
     <header class="navbar">
       <div class="header__top">
@@ -72,18 +77,37 @@
       <section class="historia-hubcare">
         <div class="titulo_sobre"><h1>A HUBCARE</h1></div>
         <p class="historia-hubcare__paragrafo">
-          Genuinamente catarinense, a HUBCARE foi fundada na cidade de Florianópolis-SC no ano de 2016 sob a designação de INOVA Administradora de Benefícios. Obteve no mesmo ano o registro na ANS (42.030-1) e se especializou na viabilização e administração de planos de saúde para categorias profissionais - chamados de planos por adesão - e de empresas, buscando se diferenciar no mercado pelo uso de tecnologia para o gerenciamento do benefício saúde.
+          Genuinamente catarinense, a HUBCARE foi fundada na cidade de
+          Florianópolis-SC no ano de 2016 sob a designação de INOVA
+          Administradora de Benefícios. Obteve no mesmo ano o registro na ANS
+          (42.030-1) e se especializou na viabilização e administração de planos
+          de saúde para categorias profissionais - chamados de planos por adesão
+          - e de empresas, buscando se diferenciar no mercado pelo uso de
+          tecnologia para o gerenciamento do benefício saúde.
         </p>
         <p class="historia-hubcare__paragrafo">
-          Ato seguinte, foi criada a INOVA Intermediações de Serviços e Negócios para expandir a sua atuação para diversos nichos, não se limitando a intermediação de planos de saúde. Em 2019, veio a primeira atualização, frente a dinâmica de mercado, na qual foi adicionado à INOVA Intermediações a designação, também, de corretora de seguros, para a qual se obteve registro na SUSEP.
+          Ato seguinte, foi criada a INOVA Intermediações de Serviços e Negócios
+          para expandir a sua atuação para diversos nichos, não se limitando a
+          intermediação de planos de saúde. Em 2019, veio a primeira
+          atualização, frente a dinâmica de mercado, na qual foi adicionado à
+          INOVA Intermediações a designação, também, de corretora de seguros,
+          para a qual se obteve registro na SUSEP.
         </p>
         <p class="historia-hubcare__paragrafo">
-          Em 2020, sempre em busca de evolução, melhores processos e soluções, buscamos um nome eu representasse a nossa forma de pensar e agir para cada cliente. Assim, ambas as Empresas passaram se chamar HUBCARE, com o intuito de servir de ponto de conexão para soluções sob medida para cada necessidade.
+          Em 2020, sempre em busca de evolução, melhores processos e soluções,
+          buscamos um nome eu representasse a nossa forma de pensar e agir para
+          cada cliente. Assim, ambas as Empresas passaram se chamar HUBCARE, com
+          o intuito de servir de ponto de conexão para soluções sob medida para
+          cada necessidade.
         </p>
         <p class="historia-hubcare__paragrafo">
-          Mais recentemente, no ano de 2022, foi criada a HUBCARE DIGITAL HEALTH, de forma a democratizar o aceso à saúde por meio de produtos digitais, com foco na telemedicina.
+          Mais recentemente, no ano de 2022, foi criada a HUBCARE DIGITAL
+          HEALTH, de forma a democratizar o aceso à saúde por meio de produtos
+          digitais, com foco na telemedicina.
         </p>
-        <p class="historia-hubcare__paragrafo">HUBCARE. Sua saúde está em nossos planos!</p>
+        <p class="historia-hubcare__paragrafo">
+          HUBCARE. Sua saúde está em nossos planos!
+        </p>
       </section>
       <h1 class="titulo_sobre">Empresas do Grupo</h1>
       <section class="historia-hubcare">
@@ -93,78 +117,116 @@
         </div>
 
         <p class="historia-hubcare__paragrafo">
-          A HubCare Administradora de Benefícios está devidamente registrada na Agência Nacional de Saúde e atua como estipulante ou prestadora de serviço de Operadoras, Empresas, Órgãos públicos ou Entidades representativas, que desejam contratar um plano de saúde coletivo, auxiliando-os a proporcionar acesso à saúde a população a eles vinculada; ou ainda promovendo a gestão do benefício saúde aos contratantes.
+          A HubCare Administradora de Benefícios está devidamente registrada na
+          Agência Nacional de Saúde e atua como estipulante ou prestadora de
+          serviço de Operadoras, Empresas, Órgãos públicos ou Entidades
+          representativas, que desejam contratar um plano de saúde coletivo,
+          auxiliando-os a proporcionar acesso à saúde a população a eles
+          vinculada; ou ainda promovendo a gestão do benefício saúde aos
+          contratantes.
         </p>
+        <div id="map"></div>
 
         <ul class="historia-hubcare__lista">
           <li>Sistema operacional próprio;</li>
           <li>Sistema para corretores próprios;</li>
           <li>Plataforma de full e-commerce desenvolvida internamente</li>
           <li>
-            Sistema de gestão de sinistralidade com Machine Learning e IA (inteligência Artificial) para a identificação de padrões de utilização, mapeamento de grupos de riscos e disponibilidade de informações gerenciais que permitem respostas mais assertivas e rápidas para a redução e controle dos custos assistenciais.
+            Sistema de gestão de sinistralidade com Machine Learning e IA
+            (inteligência Artificial) para a identificação de padrões de
+            utilização, mapeamento de grupos de riscos e disponibilidade de
+            informações gerenciais que permitem respostas mais assertivas e
+            rápidas para a redução e controle dos custos assistenciais.
           </li>
         </ul>
         <h3 class="titulo_sobre">Missão</h3>
         <p class="historia-hubcare__paragrafo">
-          Promover acesso à saúde de qualidade, no setor da saúde suplementar, por meio de planos coletivos para clientes públicos e privados, conectando-os ao melhor cuidado que sua saúde possa ter.
+          Promover acesso à saúde de qualidade, no setor da saúde suplementar,
+          por meio de planos coletivos para clientes públicos e privados,
+          conectando-os ao melhor cuidado que sua saúde possa ter.
         </p>
         <h3 class="titulo_sobre">Visão</h3>
         <p class="historia-hubcare__paragrafo">
-          Ser reconhecida, até 2026, como uma das 5 maiores administradoras de benefícios do país.
+          Ser reconhecida, até 2026, como uma das 5 maiores administradoras de
+          benefícios do país.
         </p>
         <h3 class="titulo_sobre">Nossos Endereços</h3>
       </section>
       <section class="historia-hubcare">
         <h2>1.2.Hubcare Gestão em Saúde (Corretora) (LOGO)</h2>
         <p class="historia-hubcare__paragrafo">
-          A HubCare Gestão em Saúde surgiu da necessidade de conectar soluções integrais e customizadas para a realidade de seus clientes. Sua atuação pode ocorrer complementando os serviços oferecidos pela HUBCARE Administradora, ou mesmo trabalhando diretamente a gestão do benefício saúde.
+          A HubCare Gestão em Saúde surgiu da necessidade de conectar soluções
+          integrais e customizadas para a realidade de seus clientes. Sua
+          atuação pode ocorrer complementando os serviços oferecidos pela
+          HUBCARE Administradora, ou mesmo trabalhando diretamente a gestão do
+          benefício saúde.
         </p>
-        <p class="historia-hubcare__paragrafo">A HUBCARE Gestão em Saúde pode atuar:</p>
+        <p class="historia-hubcare__paragrafo">
+          A HUBCARE Gestão em Saúde pode atuar:
+        </p>
         <ul class="historia-hubcare__lista">
           <li>
-            Como Corretora para venda produtos e serviços, visto seu registro na SUSEP;
+            Como Corretora para venda produtos e serviços, visto seu registro na
+            SUSEP;
           </li>
           <li>Intermediando soluções, servindo de HUB de negócios;</li>
           <li>
-            Junto à contratantes com gestão do benefício saúde e redução da sinistralidade;
+            Junto à contratantes com gestão do benefício saúde e redução da
+            sinistralidade;
           </li>
           <li>
-            Junto à Operadoras e Auto gestões para compliance, monitoramento, medicina preventiva e controle da sinistralidade.
+            Junto à Operadoras e Auto gestões para compliance, monitoramento,
+            medicina preventiva e controle da sinistralidade.
           </li>
         </ul>
         <h3>Missão</h3>
         <p class="historia-hubcare__paragrafo">
-          Atuar junto a clientes pessoa física ou jurídica, focando na gestão e redução da sinistralidade do benefício saúde, servindo ainda de conexão para soluções sob medida para cada necessidade.
+          Atuar junto a clientes pessoa física ou jurídica, focando na gestão e
+          redução da sinistralidade do benefício saúde, servindo ainda de
+          conexão para soluções sob medida para cada necessidade.
         </p>
         <h3>Visão</h3>
         <p class="historia-hubcare__paragrafo">
-          Até 2026, ser reconhecida no país como empresa especialista na gestão de sinistralidade de planos de saúde e na conexão de soluções customizadas aos seus clientes.
+          Até 2026, ser reconhecida no país como empresa especialista na gestão
+          de sinistralidade de planos de saúde e na conexão de soluções
+          customizadas aos seus clientes.
         </p>
         <h3>Onde estamos</h3>
-        placeholder (Mapa do Brasil indicado os Estados das Regiões, SUL, SUDESTE, NORDESTE E CENTRO OESTE)
+        placeholder (Mapa do Brasil indicado os Estados das Regiões, SUL,
+        SUDESTE, NORDESTE E CENTRO OESTE)
         <h3>Nosso endereço</h3>
         <p class="historia-hubcare__paragrafo">
-          Matriz Florianópolis: Av. Rio Branco, 404, sala 601, bloco II, Centro - Florianópolis/SC - CEP: 88.015-200
+          Matriz Florianópolis: Av. Rio Branco, 404, sala 601, bloco II, Centro
+          - Florianópolis/SC - CEP: 88.015-200
         </p>
       </section>
       <section class="historia-hubcare">
         <h2>1.3.Hubcare DIGITAL (LOGO)</h2>
         <p class="historia-hubcare__paragrafo">
-          A HubCare Digital Health surgiu no ano de 2022 em razão da necessidade de democratizar o acesso à saúde, com soluções integrais e customizadas para a realidade de seus clientes frente à pandemia do Corona vírus no país. Apresenta ao mercado clínicas médicas digitais e soluções em micro serviços e tecnologias que podem ser customizadas no modelo White Label aos seus clientes e parceiros.
+          A HubCare Digital Health surgiu no ano de 2022 em razão da necessidade
+          de democratizar o acesso à saúde, com soluções integrais e
+          customizadas para a realidade de seus clientes frente à pandemia do
+          Corona vírus no país. Apresenta ao mercado clínicas médicas digitais e
+          soluções em micro serviços e tecnologias que podem ser customizadas no
+          modelo White Label aos seus clientes e parceiros.
         </p>
         <h3>Missão</h3>
         <p class="historia-hubcare__paragrafo">
-          Democratizar o acesso e o cuidado à saúde, viabilizando o atendimento de pacientes com serviços de e-saúde e teleatendimento com qualidade e tecnologia.
+          Democratizar o acesso e o cuidado à saúde, viabilizando o atendimento
+          de pacientes com serviços de e-saúde e teleatendimento com qualidade e
+          tecnologia.
         </p>
         <h3>Visão</h3>
         <p class="historia-hubcare__paragrafo">
-          Ser reconhecida até 2026 como uma das maiores plataformas brasileira de micro serviços online de saúde e bem-estar
+          Ser reconhecida até 2026 como uma das maiores plataformas brasileira
+          de micro serviços online de saúde e bem-estar
         </p>
         <h3>Onde estamos</h3>
         (Mapa do Brasil)
         <h3>Nosso endereço</h3>
         <p class="historia-hubcare__paragrafo">
-          Matriz Florianópolis: Av. Rio Branco, 404, sala 603, bloco II, Centro - Florianópolis/SC - CEP: 88.015-200
+          Matriz Florianópolis: Av. Rio Branco, 404, sala 603, bloco II, Centro
+          - Florianópolis/SC - CEP: 88.015-200
         </p>
       </section>
       Trabalhe conosco contato@hubcare.adm.br
@@ -178,7 +240,8 @@
           height="auto"
         />
         <p>
-          &copy; 2024 Hubcare Administradora de Benefícios.<br />Todos os direitos reservados.
+          &copy; 2024 Hubcare Administradora de Benefícios.<br />Todos os
+          direitos reservados.
         </p>
       </div>
       <div class="in-between"></div>
