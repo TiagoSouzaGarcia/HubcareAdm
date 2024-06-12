@@ -1,0 +1,46 @@
+.tags-ans__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  background-color: #f4f2f1;
+  height: 20vh;
+  margin: 2rem 0 0;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+.tags-ans__flags__list {
+  display: grid;
+  align-items: flex-end;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.tags-ans__flags__item {
+  box-sizing: inherit;
+}
+
+.tags-ans__flags__item p {
+  font-size: 0.8rem;
+}
+
+.caixa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 2px;
+  width: max-content;
+}
+
+.selo {
+  border: 1px solid white;
+  border-radius: 1px;
+  margin: 1px;
+  padding: 5px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

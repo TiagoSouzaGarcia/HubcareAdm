@@ -185,10 +185,6 @@ header {
   background-color: var(--cinza-branco);
 }
 
-.empresas__container img {
-  max-width: 70%;
-}
-
 .empresas__lista {
   display: grid;
   align-content: center;
@@ -205,11 +201,6 @@ header {
   padding: 2rem;
   background-color: var(--branco);
   border-radius: 32px;
-}
-
-.empresas__card img {
-  min-height: auto;
-  min-width: 75%;
 }
 
 .empresas__titulo {
@@ -231,6 +222,10 @@ header {
   margin-top: 0.5rem;
   color: var(--azul-claro);
   font-size: 1.2rem;
+}
+
+.empresas__card img {
+  max-width: 150px;
 }
 
 .operadoras-parceiras {
@@ -337,6 +332,10 @@ header {
   gap: 0.5rem;
 }
 
+.container__atendimento__card--texto p {
+  font-size: 1rem;
+}
+
 .container__atendimento__card--texto p a {
   text-decoration: none;
   color: inherit;
@@ -425,7 +424,7 @@ header {
   bottom: 22px;
   height: 88px;
   right: 40px;
-  width: 248px;
+  width: 260px;
   padding: 20px 32px;
   border-radius: 88px;
   background: var(--cinza-fundo);
@@ -532,6 +531,10 @@ header {
 }
 
 @media (max-width: 1024px) {
+  .header__top img {
+    width: 30vw;
+  }
+
   .empresas__lista {
     display: flex;
     flex-direction: column;

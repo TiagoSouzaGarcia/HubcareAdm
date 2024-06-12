@@ -3,11 +3,11 @@ const btn_link_digital = document.getElementById("btn_digital");
 const btn_link_faleconosco = document.getElementById("btn_faleconosco");
 
 btn_link_corretora.addEventListener("click", () => {
-  window.location.href = "https://portal.inova.adm.br/#/";
+  window.location.href = "https://www.hubcaresaude.com.br";
 });
 
 btn_link_digital.addEventListener("click", () => {
-  window.location.href = "https://painel.inova.adm.br/#/auth/login";
+  window.location.href = "https://hubcaredigital.com.br";
 });
 
 btn_link_faleconosco.addEventListener("click", () => {
