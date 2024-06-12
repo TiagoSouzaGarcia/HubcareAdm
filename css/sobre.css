@@ -4,17 +4,28 @@
 
 .historia-hubcare {
   color: var(--azul-escuro);
-  height: 100vh;
+  height: max-content;
   width: 100vw;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: start;
   justify-content: center;
   gap: 10%;
   padding: 20px;
+}
+
+.historia-hubcare__conteudo {
+  display: flex;
+  padding: 5rem;
+}
+
+.historia-hubcare__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .historia-hubcare__paragrafo {
@@ -23,14 +34,89 @@
   font-size: 1.2em;
 }
 
+.historia-hubcare__imagem img {
+  max-width: 40vw;
+}
+
+.titulo-empresas {
+  font-size: 2rem;
+}
+
+.empresas-hubcare {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid red;
+}
+
+.titulo-empresas {
+  color: var(--azul-escuro);
+  text-align: center;
+}
+
+.hubecare-administradora__bloco,
+.hubecare-gestao-saude__bloco,
+.hubecare-digital__bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 6rem;
+}
+
+.hubcare-administradora__titulo,
+.hubcare-gestao-saude__titulo,
+.hubcare-digital__titulo {
+  color: var(--azul-claro);
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hubcare-administradora__titulo-texto,
+.hubcare-gestao-saude__titulo-texto,
+.hubcare-digital__titulo-texto {
+  font-size: 2rem;
+}
+
+.hubcare-administradora__titulo img {
+  max-width: 10vw;
+}
+
+.hubcare-administradora__conteudo,
+.hubcare-gestao-saude__conteudo,
+.hubcare-digital__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--azul-escuro);
+}
+
+.hubcare-gestao-saude__titulo img {
+  max-width: 10vw;
+}
+
+.historia-hubcare__paragrafo {
+  text-align: justify;
+}
+
 .historia-hubcare__lista {
-  margin-left: 20px;
-  margin-right: 100px;
-  font-size: 1.2em;
+  margin-left: 30px;
+  font-size: 1rem;
+  gap: 1rem;
+  text-align: left;
+  list-style: disc;
 }
 
 .titulo_sobre {
   color: var(--azul-escuro);
+  margin-top: 2rem;
   font-size: 2rem;
   align-self: center;
+}
+
+.subtexto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
