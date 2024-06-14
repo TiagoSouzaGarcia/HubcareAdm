@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/dropdown.js"></script>
     <script src="./js/observer.js"></script>
+    <script src="./js/scroll.js"></script>
   </head>
 
   <body>
@@ -26,20 +27,20 @@
         />
 
         <div class="three-btn-header">
-          <a href="#">Portal Corretor</a>
-          <a href="#">Portal Cliente</a>
+          <a href="https://portal.inova.adm.br">Portal Corretor</a>
+          <a href="https://painel.inova.adm.br">Portal Cliente</a>
           <a href="#">Login</a>
         </div>
       </div>
       <div class="subheader">
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn">
+          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn botao__empresa-hubcare">
             A HUBCARE
           </button>
           <div class="dropdown-content" id="dropMenu1">
-            <a href="#">Quem somos</a>
-            <a href="#">Empresas do Grupo</a>
-            <a href="#">Onde estamos</a>
+            <a href="sobre.html#quem-somos" class="scroll-link">Quem somos</a>
+            <a href="sobre.html#empresas-do-grupo" class="scroll-link">Empresas do Grupo</a>
+            <a href="#sobre.html#onde-estamos" class="scroll-link">Onde estamos</a>
             <a href="#">Trabalhe conosco</a>
           </div>
         </div>
@@ -55,13 +56,9 @@
         </div>
 
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
-            FALE CONOSCO
+          <button class="drop-btn">
+            <a href="index.html#atendimento-cliente" class="drop-btn scroll-link">FALE CONOSCO</a>
           </button>
-          <div class="dropdown-content" id="dropMenu2">
-            <a href="#">Sou Cliente</a>
-            <a href="#">Quero ser Cliente</a>
-          </div>
         </div>
       </div>
     </header>
