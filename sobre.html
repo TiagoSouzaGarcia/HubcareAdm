@@ -19,34 +19,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/dropdown.js"></script>
     <script src="./js/observer.js"></script>
+    <script src="./js/scroll.js"></script>
   </head>
 
   <body>
     <header class="navbar">
       <div class="header__top">
-        <a href="index.html">
-          <img
-            src="./assets/logos/hubcare-logo.png"
-            alt="Hubcare Logo"
-            height="auto"
-          />
-        </a>
+        <img
+          src="./assets/logos/hubcare-logo.png"
+          alt="Hubcare Logo"
+          height="auto"
+        />
 
         <div class="three-btn-header">
-          <a href="#">Portal Corretor</a>
+          <a href="https://portal.inova.adm.br">Portal Corretor</a>
           <a href="https://painel.inova.adm.br">Portal Cliente</a>
           <a href="#">Login</a>
         </div>
       </div>
       <div class="subheader">
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn">
+          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn botao__empresa-hubcare">
             A HUBCARE
           </button>
           <div class="dropdown-content" id="dropMenu1">
-            <a href="sobre.html">Quem somos</a>
-            <a href="#quem-somos">Empresas do Grupo</a>
-            <a href="#atendimento-cliente">Onde estamos</a>
+            <a href="sobre.html#quem-somos" class="scroll-link">Quem somos</a>
+            <a href="sobre.html#empresas-do-grupo" class="scroll-link">Empresas do Grupo</a>
+            <a href="#sobre.html#onde-estamos" class="scroll-link">Onde estamos</a>
             <a href="#">Trabalhe conosco</a>
           </div>
         </div>
@@ -62,20 +61,16 @@
         </div>
 
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu2')" class="drop-btn">
-            FALE CONOSCO
+          <button class="drop-btn">
+            <a href="index.html#atendimento-cliente" class="drop-btn scroll-link">FALE CONOSCO</a>
           </button>
-          <div class="dropdown-content" id="dropMenu2">
-            <a href="https://painel.inova.adm.br" id="">Sou Cliente</a>
-            <a href="#atendimento-cliente">Quero ser Cliente</a>
-          </div>
         </div>
       </div>
     </header>
 
     <main class="sobre">
       <section class="historia-hubcare">
-        <div class="titulo_sobre"><h1>A HUBCARE</h1></div>
+        <div class="titulo_sobre"><h1 id="quem-somos">A HUBCARE</h1></div>
         <div class="historia-hubcare__conteudo">
           <div class="historia-hubcare__texto">
             <p class="historia-hubcare__paragrafo">
@@ -118,7 +113,7 @@
         </div>
       </section>
 
-      <h2 class="titulo-empresas">Empresas do Grupo</h2>
+      <h2 class="titulo-empresas" id="empresas-do-grupo">Empresas do Grupo</h2>
       <!-- Hubcare Administradora -->
       <section class="empresas-hubcare">
         <div class="hubecare-administradora__bloco">
@@ -170,7 +165,7 @@
               Ser reconhecida, até 2026, como uma das 5 maiores administradoras
               de benefícios do país.
             </p>
-            <h3 class="titulo_sobre">Nossos Endereços</h3>
+            <h3 class="titulo_sobre" id="onde-estamos">Nossos Endereços</h3>
           </div>
         </div>
       </section>
