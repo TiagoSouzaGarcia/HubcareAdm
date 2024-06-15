@@ -14,12 +14,14 @@
     <script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/ol@v9.2.4/ol.css"
+      href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+      type="text/css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/dropdown.js"></script>
     <script src="./js/observer.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/map.js"></script>
   </head>
 
   <body>
@@ -39,13 +41,20 @@
       </div>
       <div class="subheader">
         <div class="dropdown">
-          <button onclick="toggleDropdown('dropMenu1')" class="drop-btn botao__empresa-hubcare">
+          <button
+            onclick="toggleDropdown('dropMenu1')"
+            class="drop-btn botao__empresa-hubcare"
+          >
             A HUBCARE
           </button>
           <div class="dropdown-content" id="dropMenu1">
             <a href="sobre.html#quem-somos" class="scroll-link">Quem somos</a>
-            <a href="sobre.html#empresas-do-grupo" class="scroll-link">Empresas do Grupo</a>
-            <a href="#sobre.html#onde-estamos" class="scroll-link">Onde estamos</a>
+            <a href="sobre.html#empresas-do-grupo" class="scroll-link"
+              >Empresas do Grupo</a
+            >
+            <a href="#sobre.html#onde-estamos" class="scroll-link"
+              >Onde estamos</a
+            >
             <a href="#">Trabalhe conosco</a>
           </div>
         </div>
@@ -62,7 +71,11 @@
 
         <div class="dropdown">
           <button class="drop-btn">
-            <a href="index.html#atendimento-cliente" class="drop-btn scroll-link">FALE CONOSCO</a>
+            <a
+              href="index.html#atendimento-cliente"
+              class="drop-btn scroll-link"
+              >FALE CONOSCO</a
+            >
           </button>
         </div>
       </div>
@@ -165,7 +178,27 @@
               Ser reconhecida, até 2026, como uma das 5 maiores administradoras
               de benefícios do país.
             </p>
-            <h3 class="titulo_sobre" id="onde-estamos">Nossos Endereços</h3>
+            <h3 class="titulo_sobre" id="onde-estamos">Onde Estamos</h3>
+            <div id="map-admin" class="map"></div>
+            <h3
+              class="titulo_sobre"
+              id="nossos-enderecos-hubcare-administradora"
+            >
+              Nossos endereços
+            </h3>
+            <p>
+              <strong> Matriz Florianópolis:</strong> Av. Rio Branco, 404, salas
+              601, 602, 603, bloco II, Centro – Florianópolis/SC – CEP:
+              88.015-200
+            </p>
+            <p>
+              <strong>Filial São Paulo: </strong>Av. Paulista, 726, conj. 604,
+              Bela Vista – São Paulo/SP – CEP: 01.310-910
+            </p>
+            <p>
+              <strong>Filial Recife: </strong>Av. Linz Petit, 100, sala 801,
+              Ilha do Leite, Recife/PE – CEP: 50.070-235
+            </p>
           </div>
         </div>
       </section>
@@ -217,8 +250,7 @@
               soluções customizadas aos seus clientes.
             </p>
             <h3 class="titulo_sobre">Onde estamos</h3>
-            placeholder (Mapa do Brasil indicado os Estados das Regiões, SUL,
-            SUDESTE, NORDESTE E CENTRO OESTE)
+            <div id="map-gestao" class="map"></div>
             <h3 class="titulo_sobre">Nosso endereço</h3>
             <p class="historia-hubcare__paragrafo">
               Matriz Florianópolis: Av. Rio Branco, 404, sala 601, bloco II,
@@ -235,34 +267,35 @@
               Hubcare DIGITAL (LOGO)
             </h2>
           </div>
-        </div>
-        <div class="hubcare-digital__conteudo">
-          <p class="historia-hubcare__paragrafo">
-            A HubCare Digital Health surgiu no ano de 2022 em razão da
-            necessidade de democratizar o acesso à saúde, com soluções integrais
-            e customizadas para a realidade de seus clientes frente à pandemia
-            do Corona vírus no país. Apresenta ao mercado clínicas médicas
-            digitais e soluções em micro serviços e tecnologias que podem ser
-            customizadas no modelo White Label aos seus clientes e parceiros.
-          </p>
-          <h3 class="titulo_sobre">Missão</h3>
-          <p class="historia-hubcare__paragrafo">
-            Democratizar o acesso e o cuidado à saúde, viabilizando o
-            atendimento de pacientes com serviços de e-saúde e teleatendimento
-            com qualidade e tecnologia.
-          </p>
-          <h3 class="titulo_sobre">Visão</h3>
-          <p class="historia-hubcare__paragrafo">
-            Ser reconhecida até 2026 como uma das maiores plataformas brasileira
-            de micro serviços online de saúde e bem-estar
-          </p>
-          <h3 class="titulo_sobre">Onde estamos</h3>
-          (Mapa do Brasil)
-          <h3 class="titulo_sobre">Nosso endereço</h3>
-          <p class="historia-hubcare__paragrafo">
-            Matriz Florianópolis: Av. Rio Branco, 404, sala 603, bloco II,
-            Centro - Florianópolis/SC - CEP: 88.015-200
-          </p>
+          <div class="hubcare-digital__conteudo">
+            <p class="historia-hubcare__paragrafo">
+              A HubCare Digital Health surgiu no ano de 2022 em razão da
+              necessidade de democratizar o acesso à saúde, com soluções
+              integrais e customizadas para a realidade de seus clientes frente
+              à pandemia do Corona vírus no país. Apresenta ao mercado clínicas
+              médicas digitais e soluções em micro serviços e tecnologias que
+              podem ser customizadas no modelo White Label aos seus clientes e
+              parceiros.
+            </p>
+            <h3 class="titulo_sobre">Missão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Democratizar o acesso e o cuidado à saúde, viabilizando o
+              atendimento de pacientes com serviços de e-saúde e teleatendimento
+              com qualidade e tecnologia.
+            </p>
+            <h3 class="titulo_sobre">Visão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Ser reconhecida até 2026 como uma das maiores plataformas
+              brasileira de micro serviços online de saúde e bem-estar
+            </p>
+            <h3 class="titulo_sobre">Onde estamos</h3>
+            <div id="map-digital" class="map"></div>
+            <h3 class="titulo_sobre">Nosso endereço</h3>
+            <p class="historia-hubcare__paragrafo">
+              Matriz Florianópolis: Av. Rio Branco, 404, sala 603, bloco II,
+              Centro - Florianópolis/SC - CEP: 88.015-200
+            </p>
+          </div>
         </div>
       </section>
       Trabalhe conosco contato@hubcare.adm.br
