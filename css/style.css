@@ -614,7 +614,7 @@ header {
   .empresas__lista {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0;
     gap: 2rem;
   }
 
