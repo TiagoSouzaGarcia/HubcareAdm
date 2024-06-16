@@ -23,6 +23,7 @@ function updateHeroTitle() {
 function callUpdates() {
   updateAriaOrientation();
   updateHeroTitle();
+  handleResize();
 }
 
 callUpdates();

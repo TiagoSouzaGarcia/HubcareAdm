@@ -6,7 +6,7 @@
   color: var(--azul-escuro);
   height: max-content;
   width: 100vw;
-  margin-top: 15vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -36,6 +36,7 @@
 
 .historia-hubcare__imagem img {
   max-width: 40vw;
+  padding: 1rem;
 }
 
 .titulo-empresas {
@@ -119,4 +120,86 @@
 .subtexto {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.map {
+  height: 60vh;
+  width: 80vw;
+}
+
+.map img {
+  width: 20px;
+}
+
+@media (min-width: 1356px) {
+}
+
+@media (max-width: 1024px) {
+  .header__top img {
+    width: 30vw;
+  }
+
+  .divider {
+    height: auto;
+    width: 80vw;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: flex;
+    padding-top: 1rem;
+    position: relative;
+  }
+
+  .header__top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botao__empresa-hubcare {
+    display: none;
+  }
+
+  .header__top img {
+    max-width: 60vw;
+  }
+
+  .three-btn-header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+  }
+
+  .three-btn-header a {
+    padding: auto;
+    width: 60vw;
+    height: 5vh;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright img {
+    width: fit-content;
+  }
+
+  .in-between {
+    padding: 0;
+    border: 1px solid var(--cinza-escuro);
+    width: 80vw;
+  }
 }
