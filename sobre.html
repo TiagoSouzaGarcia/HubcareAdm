@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubcare</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icones/favicon.ico" / />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/observer.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/map.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="header__top">
+        <img
+          src="./assets/logos/hubcare-logo.png"
+          alt="Hubcare Logo"
+          height="auto"
+        />
+
+        <div class="three-btn-header">
+          <a href="https://portal.inova.adm.br">Portal Corretor</a>
+          <a href="https://painel.inova.adm.br">Portal Cliente</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="subheader">
+        <div class="dropdown">
+          <button
+            onclick="toggleDropdown('dropMenu1')"
+            class="drop-btn botao__empresa-hubcare"
+          >
+            A HUBCARE
+          </button>
+          <div class="dropdown-content" id="dropMenu1">
+            <a href="sobre.html#quem-somos" class="scroll-link">Quem somos</a>
+            <a href="sobre.html#empresas-do-grupo" class="scroll-link"
+              >Empresas do Grupo</a
+            >
+            <a href="#sobre.html#onde-estamos" class="scroll-link"
+              >Onde estamos</a
+            >
+            <a href="#">Trabalhe conosco</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_corretora">
+            PLANOS DE SAÚDE E BENEFÍCIOS
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn" id="btn_digital">TELEMEDICINA</button>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn">
+            <a
+              href="index.html#atendimento-cliente"
+              class="drop-btn scroll-link"
+              >FALE CONOSCO</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="sobre">
+      <section class="historia-hubcare">
+        <div class="titulo_sobre"><h1 id="quem-somos">A HUBCARE</h1></div>
+        <div class="historia-hubcare__conteudo">
+          <div class="historia-hubcare__texto">
+            <p class="historia-hubcare__paragrafo">
+              Genuinamente catarinense, a HUBCARE foi fundada na cidade de
+              Florianópolis-SC no ano de 2016 sob a designação de INOVA
+              Administradora de Benefícios. Obteve no mesmo ano o registro na
+              ANS (42.030-1) e se especializou na viabilização e administração
+              de planos de saúde para categorias profissionais - chamados de
+              planos por adesão - e de empresas, buscando se diferenciar no
+              mercado pelo uso de tecnologia para o gerenciamento do benefício
+              saúde.
+            </p>
+            <p class="historia-hubcare__paragrafo">
+              Ato seguinte, foi criada a INOVA Intermediações de Serviços e
+              Negócios para expandir a sua atuação para diversos nichos, não se
+              limitando a intermediação de planos de saúde. Em 2019, veio a
+              primeira atualização, frente a dinâmica de mercado, na qual foi
+              adicionado à INOVA Intermediações a designação, também, de
+              corretora de seguros, para a qual se obteve registro na SUSEP.
+            </p>
+            <p class="historia-hubcare__paragrafo">
+              Em 2020, sempre em busca de evolução, melhores processos e
+              soluções, buscamos um nome eu representasse a nossa forma de
+              pensar e agir para cada cliente. Assim, ambas as Empresas passaram
+              se chamar HUBCARE, com o intuito de servir de ponto de conexão
+              para soluções sob medida para cada necessidade.
+            </p>
+            <p class="historia-hubcare__paragrafo">
+              Mais recentemente, no ano de 2022, foi criada a HUBCARE DIGITAL
+              HEALTH, de forma a democratizar o aceso à saúde por meio de
+              produtos digitais, com foco na telemedicina.
+            </p>
+            <p class="historia-hubcare__paragrafo">
+              HUBCARE. Sua saúde está em nossos planos!
+            </p>
+          </div>
+          <div class="historia-hubcare__imagem">
+            <img src="./assets/img/pexels-taryn-elliott-3889792.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <h2 class="titulo-empresas" id="empresas-do-grupo">Empresas do Grupo</h2>
+      <!-- Hubcare Administradora -->
+      <section class="empresas-hubcare">
+        <div class="hubecare-administradora__bloco">
+          <div class="hubcare-administradora__titulo">
+            <!--             <img src="./assets/logos/logo_hub_administradora.jpg" alt="" /> -->
+            <h2 class="hubcare-administradora__titulo-texto">
+              Hubcare Administradora
+            </h2>
+          </div>
+          <div class="hubcare-administradora__conteudo">
+            <p class="historia-hubcare__paragrafo">
+              A HubCare Administradora de Benefícios está devidamente registrada
+              na Agência Nacional de Saúde e atua como estipulante ou prestadora
+              de serviço de Operadoras, Empresas, Órgãos públicos ou Entidades
+              representativas, que desejam contratar um plano de saúde coletivo,
+              auxiliando-os a proporcionar acesso à saúde a população a eles
+              vinculada; ou ainda promovendo a gestão do benefício saúde aos
+              contratantes.
+            </p>
+            <ul class="historia-hubcare__lista">
+              <li>
+                <p>Sistema operacional próprio;</p>
+              </li>
+              <li>
+                <p>Sistema para corretores próprios;</p>
+              </li>
+              <li>
+                <p>Plataforma de full e-commerce desenvolvida internamente;</p>
+              </li>
+              <li>
+                <p>
+                  Sistema de gestão de sinistralidade com Machine Learning e IA
+                  (inteligência Artificial) para a identificação de padrões de
+                  utilização, mapeamento de grupos de riscos e disponibilidade
+                  de informações gerenciais que permitem respostas mais
+                  assertivas e rápidas para a redução e controle dos custos
+                  assistenciais.
+                </p>
+              </li>
+            </ul>
+            <h3 class="titulo_sobre">Missão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Promover acesso à saúde de qualidade, no setor da saúde
+              suplementar, por meio de planos coletivos para clientes públicos e
+              privados, conectando-os ao melhor cuidado que sua saúde possa ter.
+            </p>
+            <h3 class="titulo_sobre">Visão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Ser reconhecida, até 2026, como uma das 5 maiores administradoras
+              de benefícios do país.
+            </p>
+            <h3 class="titulo_sobre" id="onde-estamos">Onde Estamos</h3>
+            <div id="map-admin" class="map"></div>
+            <h3
+              class="titulo_sobre"
+              id="nossos-enderecos-hubcare-administradora"
+            >
+              Nossos endereços
+            </h3>
+            <p>
+              <strong> Matriz Florianópolis:</strong> Av. Rio Branco, 404, salas
+              601, 602, 603, bloco II, Centro – Florianópolis/SC – CEP:
+              88.015-200
+            </p>
+            <p>
+              <strong>Filial São Paulo: </strong>Av. Paulista, 726, conj. 604,
+              Bela Vista – São Paulo/SP – CEP: 01.310-910
+            </p>
+            <p>
+              <strong>Filial Recife: </strong>Av. Linz Petit, 100, sala 801,
+              Ilha do Leite, Recife/PE – CEP: 50.070-235
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Hubcare Gestão Saúde - Corretora -->
+      <section class="empresas-hubcare">
+        <div class="hubecare-gestao-saude__bloco">
+          <div class="hubcare-gestao-saude__titulo">
+            <h2 class="hubcare-gestao-saude__titulo-texto">
+              Hubcare Gestão em Saúde (Corretora)
+            </h2>
+            <img src="./assets/logos/logo_hub_gestao_saude.jpg" alt="" />
+          </div>
+          <div class="hubcare-gestao-saude__conteudo">
+            <p class="historia-hubcare__paragrafo">
+              A HubCare Gestão em Saúde surgiu da necessidade de conectar
+              soluções integrais e customizadas para a realidade de seus
+              clientes. Sua atuação pode ocorrer complementando os serviços
+              oferecidos pela HUBCARE Administradora, ou mesmo trabalhando
+              diretamente a gestão do benefício saúde.
+            </p>
+            <p class="historia-hubcare__paragrafo">
+              A HUBCARE Gestão em Saúde pode atuar:
+            </p>
+            <ul class="historia-hubcare__lista">
+              <li>
+                Como Corretora para venda produtos e serviços, visto seu
+                registro na SUSEP;
+              </li>
+              <li>Intermediando soluções, servindo de HUB de negócios;</li>
+              <li>
+                Junto à contratantes com gestão do benefício saúde e redução da
+                sinistralidade;
+              </li>
+              <li>
+                Junto à Operadoras e Auto gestões para compliance,
+                monitoramento, medicina preventiva e controle da sinistralidade.
+              </li>
+            </ul>
+            <h3 class="titulo_sobre">Missão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Atuar junto a clientes pessoa física ou jurídica, focando na
+              gestão e redução da sinistralidade do benefício saúde, servindo
+              ainda de conexão para soluções sob medida para cada necessidade.
+            </p>
+            <h3 class="titulo_sobre">Visão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Até 2026, ser reconhecida no país como empresa especialista na
+              gestão de sinistralidade de planos de saúde e na conexão de
+              soluções customizadas aos seus clientes.
+            </p>
+            <h3 class="titulo_sobre">Onde estamos</h3>
+            <div id="map-gestao" class="map"></div>
+            <h3 class="titulo_sobre">Nosso endereço</h3>
+            <p class="historia-hubcare__paragrafo">
+              Matriz Florianópolis: Av. Rio Branco, 404, sala 601, bloco II,
+              Centro - Florianópolis/SC - CEP: 88.015-200
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Hubcare Digital -->
+      <section class="empresas-hubcare">
+        <div class="hubecare-digital__bloco">
+          <div class="hubcare-digital__titulo">
+            <h2 class="hubcare-gestao-saude__titulo-texto">
+              Hubcare DIGITAL (LOGO)
+            </h2>
+          </div>
+          <div class="hubcare-digital__conteudo">
+            <p class="historia-hubcare__paragrafo">
+              A HubCare Digital Health surgiu no ano de 2022 em razão da
+              necessidade de democratizar o acesso à saúde, com soluções
+              integrais e customizadas para a realidade de seus clientes frente
+              à pandemia do Corona vírus no país. Apresenta ao mercado clínicas
+              médicas digitais e soluções em micro serviços e tecnologias que
+              podem ser customizadas no modelo White Label aos seus clientes e
+              parceiros.
+            </p>
+            <h3 class="titulo_sobre">Missão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Democratizar o acesso e o cuidado à saúde, viabilizando o
+              atendimento de pacientes com serviços de e-saúde e teleatendimento
+              com qualidade e tecnologia.
+            </p>
+            <h3 class="titulo_sobre">Visão</h3>
+            <p class="historia-hubcare__paragrafo">
+              Ser reconhecida até 2026 como uma das maiores plataformas
+              brasileira de micro serviços online de saúde e bem-estar
+            </p>
+            <h3 class="titulo_sobre">Onde estamos</h3>
+            <div id="map-digital" class="map"></div>
+            <h3 class="titulo_sobre">Nosso endereço</h3>
+            <p class="historia-hubcare__paragrafo">
+              Matriz Florianópolis: Av. Rio Branco, 404, sala 603, bloco II,
+              Centro - Florianópolis/SC - CEP: 88.015-200
+            </p>
+          </div>
+        </div>
+      </section>
+      Trabalhe conosco contato@hubcare.adm.br
+    </main>
+    <footer class="footer">
+      <div class="copyright">
+        <img
+          src="assets/img/monocromatic logo2.svg"
+          alt="Monocromatic Hubcare Logo"
+          width="25%"
+          height="auto"
+        />
+        <p>
+          &copy; 2024 Hubcare Administradora de Benefícios.<br />Todos os
+          direitos reservados.
+        </p>
+      </div>
+      <div class="in-between"></div>
+      <div class="privacidade">
+        <a href="#">Política de Privacidade</a>
+      </div>
+      <div class="termo-uso">
+        <a href="#">Termos de Uso</a>
+      </div>
+      <div class="in-between"></div>
+      <div>
+        <p>Siga nossas redes sociais:</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://whatsapp.com" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/ancoras.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
