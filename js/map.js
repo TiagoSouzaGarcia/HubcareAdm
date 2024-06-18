@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       view: new ol.View({
         center: ol.proj.fromLonLat(centerCoordinates),
-        zoom: 4,
+        zoom: 3.5,
       }),
     });
 
@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var brasilCentralizado = [-47.9292, -15.7801];
+  var brasilCentralizadoMobile = [-51.9292, -15.7801];
   var mapAdmin = createMap(
     "map-admin",
     brasilCentralizado,
@@ -140,7 +141,11 @@ document.addEventListener("DOMContentLoaded", function () {
       []
     )
   );
-  var mapDigital = createMap("map-digital", brasilCentralizado, allStates);
+  var mapDigital = createMap(
+    "map-digital",
+    brasilCentralizadoMobile,
+    allStates
+  );
 
   function handleResize() {
     var maps = [mapAdmin, mapGestao, mapDigital];
@@ -157,6 +162,14 @@ document.addEventListener("DOMContentLoaded", function () {
           interaction.setActive(!disableInteractions);
         }
       });
+
+      if (disableInteractions) {
+        map.getView().setZoom(3.5);
+        map.getView().setCenter(ol.proj.fromLonLat(brasilCentralizadoMobile));
+      } else {
+        map.getView().setZoom(4);
+        map.getView().setCenter(ol.proj.fromLonLat(brasilCentralizado));
+      }
     });
   }
 
